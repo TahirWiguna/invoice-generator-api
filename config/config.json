@@ -1,0 +1,71 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "root",
+    "database": "invoice_reminder",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": "5433",
+    "operatorsAliases": 0,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "init": {
+      "freezeTableName": true,
+      "timestamps": false
+    },
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    }
+  },
+  "test": {
+    "username": "postgres",
+    "password": "root",
+    "database": "invoice_reminder",
+    "host": "localhost",
+    "port": "5433",
+    "dialect": "postgres",
+    "operatorsAliases": 0,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "init": {
+      "freezeTableName": true,
+      "timestamps": false
+    },
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    }
+  },
+  "production": {
+    "username": "postgres",
+    "password": "root",
+    "database": "invoice_reminder",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5433,
+    "operatorsAliases": 0,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "init": {
+      "freezeTableName": true,
+      "timestamps": false
+    },
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    }
+  }
+}
