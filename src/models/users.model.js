@@ -1,101 +1,58 @@
-"use strict"
-const { Model } = require("sequelize")
+const { response, responseType } = require("../utils/response")
+const db = require("../models_sequelize")
+const { Op } = require("sequelize")
+const Users = db.users
 
-const MODEL_NAME = "users"
+const checkId = async (id, res) => {
+  const existingId = await Users.findOne({ where: { id, active: true } })
+  if (existingId) {
+    return existingId
+  }
+  return null
+}
 
-module.exports = (sequelize, Sequelize) => {
-  class model extends Model {
-    static associate(models) {
-      this.hasMany(models.users_token, {
-        foreignKey: "user_id",
-        onDelete: "CASCADE",
-        onUpdate: "CASCADE",
-      })
+const checkExistingEmail = async (email, exceptId, res) => {
+  const where = {
+    email,
+    active: true,
+  }
+  if (exceptId) where.id = { [Op.ne]: exceptId }
+
+  const existingEmail = await Users.findOne({ where })
+  if (existingEmail) {
+    if (res) {
+      return response(
+        res,
+        responseType.VALIDATION_ERROR,
+        "The email is already taken."
+      )
+    } else {
+      return existingEmail
     }
   }
-
-  model.init(
-    {
-      id: {
-        type: Sequelize.BIGINT,
-        primaryKey: true,
-        autoIncrement: true,
-      },
-      email: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        unique: true,
-      },
-      username: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        unique: true,
-      },
-      password: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      fullname: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
-      last_login: {
-        type: Sequelize.DATE,
-        allowNull: true,
-      },
-      last_ip_address: {
-        type: Sequelize.STRING,
-        allowNull: true,
-      },
-      login_attempts: {
-        type: Sequelize.SMALLINT,
-        allowNull: true,
-      },
-      banned_until: {
-        type: Sequelize.DATE,
-        allowNull: true,
-      },
-      status: {
-        type: Sequelize.BOOLEAN,
-        allowNull: false,
-        defaultValue: false,
-      },
-      created_at: {
-        type: Sequelize.DATE,
-        defaultValue: Sequelize.fn("now"),
-        allowNull: false,
-      },
-      updated_at: {
-        type: Sequelize.DATE,
-        allowNull: true,
-      },
-    },
-    {
-      sequelize,
-      modelName: MODEL_NAME,
-      indexes: [
-        {
-          unique: true,
-          fields: ["email"],
-          where: {
-            status: true,
-          },
-        },
-        {
-          unique: true,
-          fields: ["username"],
-          where: {
-            status: true,
-          },
-        },
-        {
-          fields: ["created_at"],
-        },
-        {
-          fields: ["last_login"],
-        },
-      ],
-    }
-  )
-  return model
+  return null
 }
+
+const checkExistingUsername = async (username, exceptId, res) => {
+  const where = {
+    username,
+    active: true,
+  }
+  if (exceptId) where.id = { [Op.ne]: exceptId }
+
+  const existingUsername = await Users.findOne({ where })
+  if (existingUsername) {
+    if (res) {
+      return response(
+        res,
+        responseType.VALIDATION_ERROR,
+        "The username is already taken."
+      )
+    } else {
+      return existingUsername
+    }
+  }
+  return null
+}
+
+module.exports = { checkExistingEmail, checkExistingUsername, checkId }

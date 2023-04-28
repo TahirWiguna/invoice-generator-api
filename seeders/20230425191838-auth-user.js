@@ -1,6 +1,6 @@
 "use strict"
 const bcrypt = require("bcrypt")
-const models = require("../src/models")
+const models = require("../src/models_sequelize")
 const saltRounds = 10
 
 /** @type {import('sequelize-cli').Migration} */
@@ -25,12 +25,14 @@ module.exports = {
           username: "tahir",
           password: await bcrypt.hash("123123", saltRounds),
           fullname: "Tahir Wiguna",
+          active: true,
         },
         {
           email: "admin@hr.com",
           username: "admin",
           password: await bcrypt.hash("rahasia", saltRounds),
           fullname: "Admin HR",
+          active: true,
         },
       ]
       await queryInterface.bulkInsert("users", data_user)

@@ -1,64 +1,52 @@
-"use strict"
-const { Model } = require("sequelize")
+const { response, responseType } = require("../utils/response")
+const db = require("../models_sequelize")
+const { Op } = require("sequelize")
+const Permission = db.permission
+const RolesPermission = db.roles_permission
 
-const MODEL_NAME = "permission"
+const checkId = async (id, res) => {
+  const existingId = await Permission.findOne({ where: { id, active: true } })
+  if (existingId) {
+    return existingId
+  }
+  return null
+}
 
-module.exports = (sequelize, DataTypes) => {
-  class model extends Model {
-    static associate(models) {
-      this.hasMany(models.roles_permission, {
-        foreignKey: "permission_id",
-        onDelete: "CASCADE",
-        onUpdate: "CASCADE",
-      })
-      this.belongsTo(models.users, {
-        foreignKey: "created_by",
-        onDelete: "CASCADE",
-        onUpdate: "CASCADE",
-      })
-    }
+/**
+ * Check if a role has a permission
+ * @param {string | string[]} role_ids
+ * @param {string} permission_name
+ * @returns {boolean}
+ * @example
+ * const hasPermission = await checkRolePermission("1", "users.read")
+ * const hasPermission = await checkRolePermission(["1","2","3"], "users.read")
+ */
+const checkRolePermission = async (role_ids, permission_name) => {
+  const existingPermission = await Permission.findOne({
+    where: { name: permission_name },
+  })
+
+  if (!existingPermission) {
+    return false
   }
 
-  model.init(
-    {
-      id: {
-        type: DataTypes.BIGINT,
-        primaryKey: true,
-        autoIncrement: true,
-      },
-      name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      description: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
-      module: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      created_at: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.fn("now"),
-        allowNull: false,
-      },
-      created_by: {
-        type: DataTypes.BIGINT,
-        allowNull: false,
-      },
-    },
-    {
-      sequelize,
-      modelName: MODEL_NAME,
-      indexes: [
-        {
-          fields: ["name"],
-          unique: true,
-        },
-      ],
-    }
-  )
+  if (typeof role_ids === "string") {
+    role_ids = [role_ids]
+  }
 
-  return model
+  if (Array.isArray(role_ids)) {
+    for (const role_id of role_ids) {
+      const existingRolePermission = await RolesPermission.findOne({
+        where: { roles_id: role_id, permission_id: existingPermission.id },
+      })
+      if (existingRolePermission) {
+        return true
+      }
+    }
+    return false
+  }
+
+  return false
 }
+
+module.exports = { checkId, checkRolePermission }

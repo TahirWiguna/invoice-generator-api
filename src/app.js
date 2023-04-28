@@ -1,3 +1,6 @@
+const requestIp = require("request-ip")
+
+const usersRouter = require("./routes/users")
 const authRouter = require("./routes/auth")
 
 // SETUP
@@ -9,12 +12,14 @@ const API_URL = "/v1/api"
 
 app.use(express.json())
 app.use(errorHandler)
+app.use(requestIp.mw())
 
 // ROUTER
 app.use(API_URL, authRouter)
+app.use(API_URL, usersRouter)
 
 // INIT DB
-// const db = require("./models")
+const db = require("./models_sequelize")
 // db.sequelize
 //   .sync({ alter: true })
 //   .then(() => {

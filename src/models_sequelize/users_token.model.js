@@ -7,7 +7,7 @@ module.exports = (sequelize, Sequelize) => {
   class model extends Model {
     static associate(models) {
       this.belongsTo(models.users, {
-        foreignKey: "user_id",
+        foreignKey: "users_id",
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
       })
@@ -25,7 +25,15 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      user_id: {
+      ip_address: {
+        type: Sequelize.STRING(100),
+        allowNull: false,
+      },
+      user_agent: {
+        type: Sequelize.STRING(100),
+        allowNull: false,
+      },
+      users_id: {
         type: Sequelize.BIGINT,
         allowNull: false,
       },
@@ -37,6 +45,11 @@ module.exports = (sequelize, Sequelize) => {
       expires_at: {
         type: Sequelize.DATE,
         allowNull: true,
+      },
+      active: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: true,
+        allowNull: false,
       },
     },
     {

@@ -1,11 +1,27 @@
 "use strict"
 const { Model } = require("sequelize")
 
-const MODEL_NAME = "users_roles"
+const MODEL_NAME = "roles_permission"
 
 module.exports = (sequelize, Sequelize) => {
   class model extends Model {
-    static associate(models) {}
+    static associate(models) {
+      this.belongsTo(models.roles, {
+        foreignKey: "roles_id",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+      })
+      this.belongsTo(models.permission, {
+        foreignKey: "permission_id",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+      })
+      this.belongsTo(models.users, {
+        foreignKey: "created_by",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+      })
+    }
   }
 
   model.init(
@@ -15,11 +31,11 @@ module.exports = (sequelize, Sequelize) => {
         primaryKey: true,
         autoIncrement: true,
       },
-      users_id: {
+      roles_id: {
         type: Sequelize.BIGINT,
         allowNull: false,
       },
-      roles_id: {
+      permission_id: {
         type: Sequelize.BIGINT,
         allowNull: false,
       },
@@ -30,18 +46,12 @@ module.exports = (sequelize, Sequelize) => {
       },
       created_by: {
         type: Sequelize.BIGINT,
-        allowNull: true,
+        allowNull: false,
       },
     },
     {
       sequelize,
       modelName: MODEL_NAME,
-      indexes: [
-        {
-          fields: ["users_id", "roles_id"],
-          unique: true,
-        },
-      ],
     }
   )
 

@@ -13,12 +13,10 @@ module.exports = {
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
       },
       username: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
       },
       password: {
         type: Sequelize.STRING,
@@ -44,7 +42,7 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: true,
       },
-      status: {
+      active: {
         type: Sequelize.BOOLEAN,
         allowNull: false,
         defaultValue: false,
@@ -69,7 +67,6 @@ module.exports = {
       name: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
       },
       description: {
         type: Sequelize.STRING,
@@ -118,8 +115,8 @@ module.exports = {
         allowNull: false,
       },
       created_by: {
-        type: Sequelize.DATE,
-        allowNull: true,
+        type: Sequelize.BIGINT,
+        allowNull: false,
       },
     })
 
@@ -211,7 +208,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      user_id: {
+      users_id: {
         type: Sequelize.BIGINT,
         allowNull: false,
         references: {
@@ -220,6 +217,14 @@ module.exports = {
         },
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
+      },
+      ip_address: {
+        type: Sequelize.STRING(100),
+        allowNull: false,
+      },
+      user_agent: {
+        type: Sequelize.STRING(100),
+        allowNull: false,
       },
       created_at: {
         type: Sequelize.DATE,
@@ -230,6 +235,11 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: true,
       },
+      active: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: true,
+        allowNull: false,
+      },
     })
 
     // Options
@@ -238,14 +248,14 @@ module.exports = {
       unique: true,
       fields: ["email"],
       where: {
-        status: true,
+        active: true,
       },
     })
     await queryInterface.addIndex("users", {
       unique: true,
       fields: ["username"],
       where: {
-        status: true,
+        active: true,
       },
     })
     await queryInterface.addIndex("users", {

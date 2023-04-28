@@ -1,50 +1,68 @@
-const Validator = require("validatorjs")
+const Joi = require("joi")
 const bcrypt = require("bcrypt")
-const db = require("../models")
-const User = db.users
+const jwt = require("jsonwebtoken")
+const { responseType, response, responseCatch } = require("../utils/response")
+
+const db = require("../models_sequelize")
+const { validateID } = require("../utils/joiValidator")
+const Op = db.Sequelize.Op
+const Users = db.users
+const UsersTokens = db.users_token
+
 const saltRounds = 10
 
-exports.create = (req, res) => {
-  const rules = {
-    email: "required|email",
-    username: "required",
-    password: "required",
-    fullname: "required",
-  }
-
-  let validation = new Validator(req.body, rules)
-  if (validation.fails()) {
-    return res.status(422).json({
-      status: false,
-      message: "Form Validation Error",
-      data: validation.errors.all(),
-    })
-  }
-
-  let { email, username, password, fullname } = req.body
-
-  User.create({
-    email: email,
-    username: username,
-    password: bcrypt.hash(password, saltRounds),
-    fullname: fullname,
-    role: 1,
+exports.login = async (req, res) => {
+  const rules = Joi.object({
+    username: Joi.string().required(),
+    password: Joi.string().required(),
   })
-    .then((user) => {
-      res.status(200).json({
-        status: true,
-        message: "User created successfully",
-        data: user,
-      })
+
+  const { error, value } = rules.validate(req.body, { abortEarly: false })
+  if (error) {
+    return response(
+      res,
+      responseType.VALIDATION_ERROR,
+      "Form Validation Error",
+      error.details
+    )
+  }
+
+  const { username, password } = value
+
+  try {
+    const user = await Users.findOne({
+      where: { [Op.or]: [{ username: username }, { email: username }] },
     })
-    .catch((err) => {
-      let code = 500
-      if (err.message == "Validation error") {
-        code = 422
-      }
-      res.status(code).json({
-        status: false,
-        message: err.message || "Some error occurred while creating the User.",
-      })
+
+    if (!user) return response(res, responseType.NOT_FOUND, "User not found")
+
+    if (user.active === false)
+      return response(res, responseType.FORBIDDEN, "User is inactive")
+
+    if (user.banned_until > new Date())
+      return response(res, responseType.FORBIDDEN, "User has been banned")
+
+    const validatePassword = await bcrypt.compare(password, user.password)
+    if (!validatePassword)
+      return response(res, responseType.NOT_FOUND, "username/password wrong")
+
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
+      expiresIn: process.env.JWT_EXPIRED,
     })
+    const decoded = jwt.decode(token)
+    const expirationTime = new Date(decoded.exp * 1000)
+
+    const insertToken = await UsersTokens.create({
+      users_id: user.id,
+      token: token,
+      ip_address: req.clientIp,
+      user_agent: req.headers["user-agent"],
+      expires_at: expirationTime,
+    })
+
+    response(res, responseType.SUCCESS, "Login success", { token, user })
+  } catch (error) {
+    console.log(error.message)
+    responseCatch(res, error)
+  }
 }
