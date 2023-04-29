@@ -1,0 +1,196 @@
+{"level":"info","message":"App is running on PORT 3000","timestamp":"2023-04-29T15:12:11.797Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T16:20:05.378Z","url":"/v1/api/user_role/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T16:20:08.504Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T16:20:25.788Z","url":"/v1/api/role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T16:20:49.611Z","url":"/v1/api/permission/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T16:21:00.234Z","url":"/v1/api/permission/findById/1"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T16:21:02.928Z","url":"/v1/api/permission/findById/5"}
+{"body":{"email":"mtahirwiguna2@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir2"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T17:12:53.063Z","url":"/v1/api/permission/create"}
+{"body":{"create":true,"module":"allowance","read":true},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T17:16:00.581Z","url":"/v1/api/permission/create"}
+{"body":{"create":true,"module":"allowance","read":true},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T17:16:17.554Z","url":"/v1/api/permission/create"}
+{"body":{"create":true,"delete":true,"export":true,"import":true,"module":"allowance","read":true,"update":true},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T17:54:44.687Z","url":"/v1/api/permission/create"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T18:19:33.410Z","url":"/v1/api/role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T18:45:29.746Z","url":"/v1/api/role/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T18:45:34.824Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T18:46:01.075Z","url":"/v1/api/role/findAll"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T18:49:00.669Z","url":"/v1/api/role/create"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:04:56.884Z","url":"/v1/api/role/create"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:05:06.259Z","url":"/v1/api/role/create"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:05:08.396Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:05:08.417Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:06:51.593Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:06:51.640Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:07:04.283Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:07:04.329Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:09:34.896Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:09:34.942Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:09:40.468Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:09:40.513Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:25:38.083Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:25:38.129Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:27:23.198Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:27:23.244Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:29:11.751Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:29:11.799Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:29:37.908Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:29:37.954Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:30:05.699Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:30:05.743Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:30:30.027Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:30:30.072Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:43:51.359Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:43:51.406Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:44:20.040Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:44:20.086Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:45:36.332Z","url":"/v1/api/role/create"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:45:39.043Z","url":"/v1/api/auth/login"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:45:47.107Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T19:45:51.969Z","url":"/v1/api/role/findAll"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T19:45:54.684Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:45:54.702Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:05:58.238Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:05:58.287Z"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:06:35.652Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:06:35.698Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:08:02.390Z","url":"/v1/api/role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:08:05.503Z","url":"/v1/api/role/findById/1"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:08:08.148Z","url":"/v1/api/role/findById/2"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:24:37.601Z","url":"/v1/api/role/findById/2"}
+{"body":{"description":"role gajelas","name":"executive"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:24:40.867Z","url":"/v1/api/role/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:24:40.881Z"}
+{"body":{"description":"role gajela xxxs","name":"executive ed"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-04-29T20:25:00.908Z","url":"/v1/api/role/edit/2"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:25:03.271Z","url":"/v1/api/role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T20:25:09.037Z","url":"/v1/api/role/delete/2"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:25:10.884Z","url":"/v1/api/role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:25:37.835Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:25:45.485Z","url":"/v1/api/permission/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T20:25:49.555Z","url":"/v1/api/permission/findById/5"}
+{"body":{},"error":"ReferenceError: error is not defined\n    at errorHandler (D:\\Tahir\\Project\\Node\\auth-jwt-api\\src\\app.js:54:10)\n    at Layer.handle_error (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\body-parser\\lib\\read.js:130:7\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:231:16)\n    at done (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:220:7)","level":"error","message":"Request error","method":"POST","timestamp":"2023-04-29T20:27:32.481Z","url":"/v1/api/permission/create"}
+{"body":{},"error":"TypeError: Cannot read properties of undefined (reading 'name')\n    at errorHandler (D:\\Tahir\\Project\\Node\\auth-jwt-api\\src\\app.js:54:25)\n    at Layer.handle_error (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\body-parser\\lib\\read.js:130:7\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:231:16)\n    at done (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:220:7)","level":"error","message":"Request error","method":"POST","timestamp":"2023-04-29T20:28:11.814Z","url":"/v1/api/permission/create"}
+{"body":{},"error":"TypeError: Cannot read properties of undefined (reading '0')\n    at errorHandler (D:\\Tahir\\Project\\Node\\auth-jwt-api\\src\\app.js:54:24)\n    at Layer.handle_error (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\body-parser\\lib\\read.js:130:7\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:231:16)\n    at done (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:220:7)","level":"error","message":"Request error","method":"POST","timestamp":"2023-04-29T20:28:27.052Z","url":"/v1/api/permission/create"}
+{"body":{"description":"Allow to create loan","module":"loan","name":"loan.create"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:29:05.389Z","url":"/v1/api/permission/create"}
+{"body":{"description":"Allow to create loan","module":"loan","name":"loan.create"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:29:07.962Z","url":"/v1/api/permission/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:29:07.983Z"}
+{"body":{"create":true,"delete":true,"export":true,"import":true,"module":"loan","read":true,"update":true},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:30:01.844Z","url":"/v1/api/permission/create"}
+{"body":{"create":true,"delete":true,"export":true,"import":true,"module":"loan","read":true,"update":true},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:52:15.235Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"create":true,"delete":true,"export":true,"import":true,"module":"loan","read":true,"update":true},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:52:26.732Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:52:29.594Z","url":"/v1/api/auth/login"}
+{"body":{"create":true,"delete":true,"export":true,"import":true,"module":"loan","read":true,"update":true},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:52:41.577Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"create":true,"delete":true,"export":true,"import":true,"module":"loan","read":true,"update":true},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:52:45.640Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:53:29.727Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:53:29.793Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:55:26.411Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"create is not defined","timestamp":"2023-04-29T20:55:26.456Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:56:37.632Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:56:40.633Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"read is not defined","timestamp":"2023-04-29T20:56:40.651Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:56:42.594Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"read is not defined","timestamp":"2023-04-29T20:56:42.611Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:56:55.071Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T20:56:58.798Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:04:53.199Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:07:27.819Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:07:32.121Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:07:38.833Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:07:41.440Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:07:42.645Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:15:54.598Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:15:57.926Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:19:20.642Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"promises is not defined","timestamp":"2023-04-29T21:19:20.684Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:19:48.820Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:19:48.869Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:21:47.686Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:21:47.737Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:21:49.207Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:21:49.240Z"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:21:53.973Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:21:56.163Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:21:57.361Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:21:57.384Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:22:31.301Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:22:31.355Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:22:37.773Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:22:37.810Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:31:25.034Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:35:14.207Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:35:37.219Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:35:48.568Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:38:28.005Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:39:00.258Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:39:02.469Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:39:29.899Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:39:38.305Z","url":"/v1/api/permission/createTemplate"}
+{"level":"error","message":"createdPermission is not defined","timestamp":"2023-04-29T21:39:38.364Z"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:40:12.415Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:40:17.217Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:40:18.707Z","url":"/v1/api/permission/createTemplate"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T21:40:28.518Z","url":"/v1/api/permission/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:40:37.473Z","url":"/v1/api/permission/delete/159"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:40:41.182Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:40:47.229Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:42:19.960Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:42:54.993Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:43:19.469Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:43:23.992Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"module":"loan"},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-04-29T21:43:29.752Z","url":"/v1/api/permission/deleteModule"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"loan"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:43:31.719Z","url":"/v1/api/permission/createTemplate"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T21:44:44.745Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T21:45:17.446Z","url":"/v1/api/permission/findAll"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"users_roles"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:47:23.201Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"permissions_id":210,"roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:48:07.610Z","url":"/v1/api/user_role/create"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T21:49:48.035Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T21:51:20.634Z","url":"/v1/api/user_role/findAll"}
+{"body":{"permissions_id":210,"roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:51:52.300Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"Joi.integer is not a function","timestamp":"2023-04-29T21:51:52.352Z"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:53:21.362Z","url":"/v1/api/user_role/create"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:53:24.228Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T21:54:03.512Z","url":"/v1/api/user_role/findAll"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:54:06.503Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"Joi.integer is not a function","timestamp":"2023-04-29T21:54:06.511Z"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:54:23.718Z","url":"/v1/api/user_role/create"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:54:36.227Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"Joi.integer is not a function","timestamp":"2023-04-29T21:54:36.260Z"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:54:52.454Z","url":"/v1/api/user_role/create"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:55:01.084Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"Joi.int is not a function","timestamp":"2023-04-29T21:55:01.116Z"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T21:55:38.019Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T21:55:38.092Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:00:44.599Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:00:54.061Z","url":"/v1/api/user_role/findAll"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:01:01.112Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:01:01.123Z"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:01:02.787Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:01:02.797Z"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:03:44.337Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:03:44.402Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:03:56.222Z","url":"/v1/api/role/findAll"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:04:04.080Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:04:04.090Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:05:58.908Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:07:39.296Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:10:43.092Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:11:38.392Z","url":"/v1/api/user_role/findById/1"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:12:01.467Z","url":"/v1/api/permission/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:12:15.493Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:15:02.462Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:15:31.212Z","url":"/v1/api/user_role/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:15:35.773Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:15:45.436Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:16:53.397Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:16:53.427Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:16:57.979Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:16:57.988Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:17:09.952Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:09.984Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:17:13.333Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:13.362Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:17:21.165Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:17:30.755Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:30.831Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:18:09.482Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:21:55.388Z","url":"/v1/api/role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:26:24.085Z","url":"/v1/api/role/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:26:26.411Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:26:34.666Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:26:40.661Z","url":"/v1/api/role/findAll"}

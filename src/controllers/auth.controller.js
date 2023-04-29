@@ -1,10 +1,12 @@
 const Joi = require("joi")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
+
 const { responseType, response, responseCatch } = require("../utils/response")
+const { validateID } = require("../utils/joiValidator")
+const { logger } = require("../utils/logger")
 
 const db = require("../models_sequelize")
-const { validateID } = require("../utils/joiValidator")
 const Op = db.Sequelize.Op
 const Users = db.users
 const UsersTokens = db.users_token
@@ -12,24 +14,28 @@ const UsersTokens = db.users_token
 const saltRounds = 10
 
 exports.login = async (req, res) => {
-  const rules = Joi.object({
-    username: Joi.string().required(),
-    password: Joi.string().required(),
-  })
-
-  const { error, value } = rules.validate(req.body, { abortEarly: false })
-  if (error) {
-    return response(
-      res,
-      responseType.VALIDATION_ERROR,
-      "Form Validation Error",
-      error.details
-    )
-  }
-
-  const { username, password } = value
+  const { rolesId } = req
 
   try {
+    // Validation
+    const rules = Joi.object({
+      username: Joi.string().required(),
+      password: Joi.string().required(),
+    })
+
+    const { error, value } = rules.validate(req.body, { abortEarly: false })
+    if (error) {
+      return response(
+        res,
+        responseType.VALIDATION_ERROR,
+        "Form Validation Error",
+        error.details
+      )
+    }
+
+    // Start transaction
+    const { username, password } = value
+
     const user = await Users.findOne({
       where: { [Op.or]: [{ username: username }, { email: username }] },
     })
@@ -62,7 +68,7 @@ exports.login = async (req, res) => {
 
     response(res, responseType.SUCCESS, "Login success", { token, user })
   } catch (error) {
-    console.log(error.message)
+    logger.error(error.message)
     responseCatch(res, error)
   }
 }

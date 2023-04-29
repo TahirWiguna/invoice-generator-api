@@ -1,0 +1,32 @@
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:03:44.337Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:03:44.402Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:03:56.222Z","url":"/v1/api/role/findAll"}
+{"body":{"roles_id":1,"users_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:04:04.080Z","url":"/v1/api/user_role/create"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:04:04.090Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:05:58.908Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:07:39.296Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:10:43.092Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:11:38.392Z","url":"/v1/api/user_role/findById/1"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:12:01.467Z","url":"/v1/api/permission/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:12:15.493Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:15:02.462Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:15:31.212Z","url":"/v1/api/user_role/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:15:35.773Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:15:45.436Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:16:53.397Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:16:53.427Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:16:57.979Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:16:57.988Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:17:09.952Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:09.984Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:17:13.333Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:13.362Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:17:21.165Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:17:30.755Z","url":"/v1/api/user_role/findAll"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:30.831Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:18:09.482Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:21:55.388Z","url":"/v1/api/role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:26:24.085Z","url":"/v1/api/role/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-29T22:26:26.411Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:26:34.666Z","url":"/v1/api/user_role/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-04-29T22:26:40.661Z","url":"/v1/api/role/findAll"}

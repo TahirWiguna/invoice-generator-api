@@ -20,7 +20,8 @@
     "define": {
       "freezeTableName": true,
       "timestamps": false
-    }
+    },
+    "logging": false
   },
   "test": {
     "username": "postgres",
@@ -66,6 +67,7 @@
     "define": {
       "freezeTableName": true,
       "timestamps": false
-    }
+    },
+    "logging": false
   }
 }

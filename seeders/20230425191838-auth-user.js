@@ -7,18 +7,7 @@ const saltRounds = 10
 module.exports = {
   async up(queryInterface, Sequelize) {
     try {
-      // inserting roles
-      const data_role = [
-        {
-          name: "admin",
-          description: "Administrator",
-        },
-      ]
-      await queryInterface.bulkInsert("roles", data_role)
-
       // inserting user
-      const role = await models.roles.findOne({ where: { name: "admin" } })
-      const role_id = role.id
       const data_user = [
         {
           email: "mtahirwiguna@gmail.com",
@@ -41,10 +30,37 @@ module.exports = {
         where: { username: "admin" },
       })
 
+      // inserting roles
+      const data_role = [
+        {
+          name: "admin",
+          description: "Administrator",
+          created_by: user_admin.id,
+        },
+      ]
+      await queryInterface.bulkInsert("roles", data_role)
+
+      const role = await models.roles.findOne({ where: { name: "admin" } })
+      const roles_id = role.id
+
+      // inserting user_role
+      const users = await models.users.findAll()
+      const users_id = users.map((item) => item.id)
+      const data_user_role = []
+      users_id.forEach((item) => {
+        data_user_role.push({
+          users_id: item,
+          roles_id: roles_id,
+          created_by: user_admin.id,
+        })
+      })
+      await queryInterface.bulkInsert("users_roles", data_user_role)
+
       // inserting permission
       let data_permission = []
       data_permission.push(...makePermission("users", user_admin.id))
       data_permission.push(...makePermission("roles", user_admin.id))
+      data_permission.push(...makePermission("users_roles", user_admin.id))
       data_permission.push(...makePermission("permission", user_admin.id))
       data_permission.push(...makePermission("roles_permission", user_admin.id))
 
@@ -56,25 +72,12 @@ module.exports = {
       const data_role_permission = []
       permission_id.forEach((item) => {
         data_role_permission.push({
-          roles_id: role_id,
+          roles_id: roles_id,
           permission_id: item,
           created_by: user_admin.id,
         })
       })
       await queryInterface.bulkInsert("roles_permission", data_role_permission)
-
-      // inserting user_role
-      const users = await models.users.findAll()
-      const users_id = users.map((item) => item.id)
-      const data_user_role = []
-      users_id.forEach((item) => {
-        data_user_role.push({
-          users_id: item,
-          roles_id: role_id,
-          created_by: user_admin.id,
-        })
-      })
-      await queryInterface.bulkInsert("users_roles", data_user_role)
     } catch (error) {
       console.log(error)
     }

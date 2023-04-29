@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: "created_by",
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
+        as: "creator",
       })
     }
   }

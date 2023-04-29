@@ -5,7 +5,25 @@ const MODEL_NAME = "users_roles"
 
 module.exports = (sequelize, Sequelize) => {
   class model extends Model {
-    static associate(models) {}
+    static associate(models) {
+      this.belongsTo(models.users, {
+        foreignKey: "users_id",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+        as: "user",
+      })
+      this.belongsTo(models.roles, {
+        foreignKey: "roles_id",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+      })
+      this.belongsTo(models.users, {
+        foreignKey: "created_by",
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
+        as: "creator",
+      })
+    }
   }
 
   model.init(

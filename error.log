@@ -1,0 +1,47 @@
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:05:08.417Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:06:51.640Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:07:04.329Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:09:34.942Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:09:40.513Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:25:38.129Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:27:23.244Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:29:11.799Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:29:37.954Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:30:05.743Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:30:30.072Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:43:51.406Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:44:20.086Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T19:45:54.702Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:05:58.287Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:06:35.698Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:24:40.881Z"}
+{"body":{},"error":"ReferenceError: error is not defined\n    at errorHandler (D:\\Tahir\\Project\\Node\\auth-jwt-api\\src\\app.js:54:10)\n    at Layer.handle_error (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\body-parser\\lib\\read.js:130:7\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:231:16)\n    at done (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:220:7)","level":"error","message":"Request error","method":"POST","timestamp":"2023-04-29T20:27:32.481Z","url":"/v1/api/permission/create"}
+{"body":{},"error":"TypeError: Cannot read properties of undefined (reading 'name')\n    at errorHandler (D:\\Tahir\\Project\\Node\\auth-jwt-api\\src\\app.js:54:25)\n    at Layer.handle_error (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\body-parser\\lib\\read.js:130:7\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:231:16)\n    at done (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:220:7)","level":"error","message":"Request error","method":"POST","timestamp":"2023-04-29T20:28:11.814Z","url":"/v1/api/permission/create"}
+{"body":{},"error":"TypeError: Cannot read properties of undefined (reading '0')\n    at errorHandler (D:\\Tahir\\Project\\Node\\auth-jwt-api\\src\\app.js:54:24)\n    at Layer.handle_error (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\layer.js:71:5)\n    at trim_prefix (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:326:13)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\body-parser\\lib\\read.js:130:7\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:231:16)\n    at done (D:\\Tahir\\Project\\Node\\auth-jwt-api\\node_modules\\raw-body\\index.js:220:7)","level":"error","message":"Request error","method":"POST","timestamp":"2023-04-29T20:28:27.052Z","url":"/v1/api/permission/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:29:07.983Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T20:53:29.793Z"}
+{"level":"error","message":"create is not defined","timestamp":"2023-04-29T20:55:26.456Z"}
+{"level":"error","message":"read is not defined","timestamp":"2023-04-29T20:56:40.651Z"}
+{"level":"error","message":"read is not defined","timestamp":"2023-04-29T20:56:42.611Z"}
+{"level":"error","message":"promises is not defined","timestamp":"2023-04-29T21:19:20.684Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:19:48.869Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:21:47.737Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:21:49.240Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:21:57.384Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:22:31.355Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-29T21:22:37.810Z"}
+{"level":"error","message":"createdPermission is not defined","timestamp":"2023-04-29T21:39:38.364Z"}
+{"level":"error","message":"Joi.integer is not a function","timestamp":"2023-04-29T21:51:52.352Z"}
+{"level":"error","message":"Joi.integer is not a function","timestamp":"2023-04-29T21:54:06.511Z"}
+{"level":"error","message":"Joi.integer is not a function","timestamp":"2023-04-29T21:54:36.260Z"}
+{"level":"error","message":"Joi.int is not a function","timestamp":"2023-04-29T21:55:01.116Z"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T21:55:38.092Z"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:01:01.123Z"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:01:02.797Z"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:03:44.402Z"}
+{"level":"error","message":"notNull Violation: roles.name cannot be null,\nnotNull Violation: roles.description cannot be null","timestamp":"2023-04-29T22:04:04.090Z"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:16:53.427Z"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:16:57.988Z"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:09.984Z"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:13.362Z"}
+{"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:30.831Z"}

@@ -105,14 +105,17 @@ const response = (res, type, message, data = null) => {
  */
 const responseCatch = (res, err) => {
   let resp = responseType.FAILED
-  if (err.message == "Validation error") {
+  if (err.name == "SequelizeUniqueConstraintError") {
+    err.message = err.errors[0].message
+    resp = responseType.DATABASE_VALIDATION_ERROR
+  } else if (err.message == "Validation error") {
     err.message = "DB Validation Error"
     resp = responseType.DATABASE_VALIDATION_ERROR
   }
   return response(
     res,
     resp,
-    err.message || "Some error occurred while creating the User."
+    err.message || "Some error occurred while connecting to databases."
   )
 }
 

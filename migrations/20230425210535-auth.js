@@ -79,7 +79,14 @@ module.exports = {
       },
       created_by: {
         type: Sequelize.BIGINT,
-        allowNull: true,
+        allowNull: false,
+        references: {
+          model: "users",
+          key: "id",
+          as: "creator",
+        },
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
       },
     })
 
@@ -117,6 +124,13 @@ module.exports = {
       created_by: {
         type: Sequelize.BIGINT,
         allowNull: false,
+        references: {
+          model: "users",
+          key: "id",
+          as: "creator",
+        },
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
       },
     })
 
@@ -149,9 +163,10 @@ module.exports = {
         references: {
           model: "users",
           key: "id",
-          onDelete: "CASCADE",
-          onUpdate: "CASCADE",
+          as: "creator",
         },
+        onDelete: "CASCADE",
+        onUpdate: "CASCADE",
       },
     })
 
@@ -192,6 +207,7 @@ module.exports = {
         references: {
           model: "users",
           key: "id",
+          as: "creator",
         },
         onDelete: "CASCADE",
         onUpdate: "CASCADE",

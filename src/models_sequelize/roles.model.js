@@ -10,6 +10,7 @@ module.exports = (sequelize, Sequelize) => {
         foreignKey: "created_by",
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
+        as: "creator",
       })
     }
   }

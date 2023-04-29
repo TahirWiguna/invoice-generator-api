@@ -1,7 +1,13 @@
 const requestIp = require("request-ip")
+const helmet = require("helmet")
 
-const usersRouter = require("./routes/users")
+const { logger, logError, logRequest } = require("./utils/logger")
+
 const authRouter = require("./routes/auth")
+const usersRouter = require("./routes/users")
+const rolesRouter = require("./routes/roles")
+const usersRolesRouter = require("./routes/users_roles")
+const permissionRouter = require("./routes/permission")
 
 // SETUP
 const express = require("express")
@@ -10,24 +16,31 @@ const PORT = 3000
 
 const API_URL = "/v1/api"
 
+// MIDDLEWARE
+app.use(helmet())
 app.use(express.json())
 app.use(errorHandler)
 app.use(requestIp.mw())
+app.use(logRequest)
+app.use(logError)
 
 // ROUTER
 app.use(API_URL, authRouter)
 app.use(API_URL, usersRouter)
+app.use(API_URL, rolesRouter)
+app.use(API_URL, usersRolesRouter)
+app.use(API_URL, permissionRouter)
 
-// INIT DB
+// SYNC DB
 const db = require("./models_sequelize")
-// db.sequelize
-//   .sync({ alter: true })
-//   .then(() => {
-//     console.log("Synced db.")
-//   })
-//   .catch((err) => {
-//     console.log("Failed to sync db: " + err.message)
-//   })
+db.sequelize
+  .sync()
+  .then(() => {
+    console.log("Synced db.")
+  })
+  .catch((err) => {
+    console.log("Failed to sync db: " + err.message)
+  })
 
 // LISTEN
 app.listen(PORT, () => {
@@ -37,9 +50,10 @@ app.listen(PORT, () => {
 function errorHandler(err, req, res, next) {
   if (err.code === "23505") {
     // Handle unique constraint violation error
-    res.status(409).json({ error: "Duplicate key error" })
+    res.status(409).json({ message: "Data already exist" })
   } else {
-    // Handle other database errors
-    res.status(500).json({ error: "Database error" })
+    res
+      .status(err.status)
+      .json({ message: "Oops! Something went wrong.", error: err.message, err })
   }
 }
