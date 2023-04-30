@@ -45,3 +45,101 @@
 {"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:09.984Z"}
 {"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:13.362Z"}
 {"level":"error","message":"users is associated to users_roles multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.","timestamp":"2023-04-29T22:17:30.831Z"}
+{"level":"error","message":"Cannot destructure property 'columnData' of 'columns[orderColumn]' as it is undefined.","timestamp":"2023-04-30T12:01:50.202Z"}
+{"level":"error","message":"Cannot destructure property 'columnData' of 'columns[orderColumn]' as it is undefined.","timestamp":"2023-04-30T12:02:14.075Z"}
+{"level":"error","message":"Cannot destructure property 'columnData' of 'columns[orderColumn]' as it is undefined.","timestamp":"2023-04-30T12:02:19.833Z"}
+{"level":"error","message":"Cannot destructure property 'columnData' of 'columns[orderColumn]' as it is undefined.","timestamp":"2023-04-30T12:02:45.247Z"}
+{"level":"error","message":"Cannot destructure property 'columnData' of 'columns[orderColumn]' as it is undefined.","timestamp":"2023-04-30T12:04:32.205Z"}
+{"level":"error","message":"Joi.optional(...).array is not a function","timestamp":"2023-04-30T12:05:04.806Z"}
+{"level":"error","message":"Joi.optional(...).array is not a function","timestamp":"2023-04-30T12:05:17.571Z"}
+{"level":"error","message":"Joi.optional(...).array is not a function","timestamp":"2023-04-30T12:05:32.775Z"}
+{"level":"error","message":"Joi.optional(...).array is not a function","timestamp":"2023-04-30T12:05:58.141Z"}
+{"level":"error","message":"Cannot destructure property 'columnData' of 'columns[orderColumn]' as it is undefined.","timestamp":"2023-04-30T12:06:43.989Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'data')","timestamp":"2023-04-30T12:09:19.709Z"}
+{"level":"error","message":"Cannot access 'where' before initialization","timestamp":"2023-04-30T12:12:46.643Z"}
+{"level":"error","message":"Cannot access 'where' before initialization","timestamp":"2023-04-30T12:13:00.680Z"}
+{"level":"error","message":"Cannot access 'where' before initialization","timestamp":"2023-04-30T12:13:12.453Z"}
+{"level":"error","message":"Cannot access 'where' before initialization","timestamp":"2023-04-30T12:13:28.814Z"}
+{"level":"error","message":"Cannot access 'where' before initialization","timestamp":"2023-04-30T12:13:47.701Z"}
+{"level":"error","message":"where.push is not a function","timestamp":"2023-04-30T12:14:19.429Z"}
+{"level":"error","message":"Invalid value { id: { [Symbol(like)]: '%111%' } }","timestamp":"2023-04-30T12:14:41.583Z"}
+{"level":"error","message":"Invalid value { id: { [Symbol(like)]: '%111%' } }","timestamp":"2023-04-30T12:15:05.150Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"[object Object]\"","timestamp":"2023-04-30T12:16:30.415Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"[object Object]\"","timestamp":"2023-04-30T12:16:58.081Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:17:45.678Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:17:53.157Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:19:07.083Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:19:25.342Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:20:00.454Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:20:12.593Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:20:17.108Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:21:19.375Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:45:41.924Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:46:03.442Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:46:04.883Z"}
+{"level":"error","message":"operator does not exist: bigint ~~ unknown","timestamp":"2023-04-30T12:52:03.442Z"}
+{"level":"error","message":"column permission.id::text does not exist","timestamp":"2023-04-30T12:52:15.304Z"}
+{"level":"error","message":"sequelize is not defined","timestamp":"2023-04-30T12:57:09.584Z"}
+{"level":"error","message":"query is not defined","timestamp":"2023-04-30T12:57:53.559Z"}
+{"level":"error","message":"smth.col.startsWith is not a function","timestamp":"2023-04-30T13:01:07.278Z"}
+{"level":"error","message":"smth.col.startsWith is not a function","timestamp":"2023-04-30T13:02:07.719Z"}
+{"level":"error","message":"smth.col.startsWith is not a function","timestamp":"2023-04-30T13:05:49.847Z"}
+{"level":"error","message":"smth.col.startsWith is not a function","timestamp":"2023-04-30T13:06:12.439Z"}
+{"level":"error","message":"smth.col.startsWith is not a function","timestamp":"2023-04-30T13:07:23.137Z"}
+{"level":"error","message":"query is not defined","timestamp":"2023-04-30T13:08:23.974Z"}
+{"level":"error","message":"column permission.email does not exist","timestamp":"2023-04-30T13:08:52.786Z"}
+{"level":"error","message":"operator does not exist: bigint ~~* unknown","timestamp":"2023-04-30T13:09:34.800Z"}
+{"level":"error","message":"operator does not exist: bigint ~~* unknown","timestamp":"2023-04-30T13:09:40.773Z"}
+{"level":"error","message":"where.push is not a function","timestamp":"2023-04-30T13:11:38.748Z"}
+{"level":"error","message":"column reference \"id\" is ambiguous","timestamp":"2023-04-30T13:14:35.328Z"}
+{"level":"error","message":"column reference \"id\" is ambiguous","timestamp":"2023-04-30T13:17:15.584Z"}
+{"level":"error","message":"Op is not defined","timestamp":"2023-04-30T14:32:46.759Z"}
+{"level":"error","message":"Op is not defined","timestamp":"2023-04-30T14:33:26.528Z"}
+{"level":"error","message":"Permission is not defined","timestamp":"2023-04-30T14:33:53.095Z"}
+{"level":"error","message":"xx is not defined","timestamp":"2023-04-30T14:37:04.309Z"}
+{"level":"error","message":"s.replace is not a function","timestamp":"2023-04-30T14:37:09.585Z"}
+{"level":"error","message":"s.replace is not a function","timestamp":"2023-04-30T14:37:38.992Z"}
+{"level":"error","message":"s.replace is not a function","timestamp":"2023-04-30T14:39:02.318Z"}
+{"level":"error","message":"s.replace is not a function","timestamp":"2023-04-30T14:39:21.190Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T14:49:21.045Z"}
+{"level":"error","message":"Cannot access 'datatable' before initialization","timestamp":"2023-04-30T14:51:32.551Z"}
+{"level":"error","message":"Unsupported where option value: [Function: datatable]. Please refer to the Sequelize documentation to learn more about which values are accepted as part of the where option.","timestamp":"2023-04-30T14:51:41.383Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:10:00.712Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:12:48.848Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:13:40.013Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:13:55.091Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:14:11.000Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:14:52.607Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:15:46.220Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:16:50.340Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:18:38.392Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:19:07.657Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'value')","timestamp":"2023-04-30T15:19:56.879Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'value')","timestamp":"2023-04-30T15:20:12.312Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'value')","timestamp":"2023-04-30T15:20:52.029Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"id\"","timestamp":"2023-04-30T15:20:57.997Z"}
+{"level":"error","message":"invalid input syntax for type bigint: \"\"","timestamp":"2023-04-30T15:22:29.966Z"}
+{"level":"error","message":"invalid input syntax for type timestamp with time zone: \"Invalid date\"","timestamp":"2023-04-30T15:24:53.383Z"}
+{"level":"error","message":"invalid input syntax for type timestamp with time zone: \"Invalid date\"","timestamp":"2023-04-30T16:34:42.421Z"}
+{"level":"error","message":"column reference \"created_at\" is ambiguous","timestamp":"2023-04-30T16:39:31.151Z"}
+{"level":"error","message":"column reference \"created_at\" is ambiguous","timestamp":"2023-04-30T16:40:31.907Z"}
+{"level":"error","message":"invalid input syntax for type date: \"25\"","timestamp":"2023-04-30T16:41:10.830Z"}
+{"level":"error","message":"invalid input syntax for type date: \"\"","timestamp":"2023-04-30T16:44:10.021Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'type')","timestamp":"2023-04-30T17:13:34.737Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'type')","timestamp":"2023-04-30T17:14:12.916Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'type')","timestamp":"2023-04-30T17:14:15.990Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'type')","timestamp":"2023-04-30T17:14:18.263Z"}
+{"level":"error","message":"value is not defined","timestamp":"2023-04-30T17:27:00.715Z"}
+{"level":"error","message":"rules is not defined","timestamp":"2023-04-30T17:35:40.130Z"}
+{"level":"error","message":"roles is associated to roles_permission using an alias. You've included an alias (roles), but it does not match the alias(es) defined in your association (role).","timestamp":"2023-04-30T17:56:23.713Z"}
+{"level":"error","message":"users is associated to roles_permission using an alias. You must use the 'as' keyword to specify the alias within your include statement.","timestamp":"2023-04-30T17:57:53.128Z"}
+{"level":"error","message":"permission is not defined","timestamp":"2023-04-30T17:58:55.805Z"}
+{"level":"error","message":"insert or update on table \"roles_permission\" violates foreign key constraint \"roles_permission_roles_id_fkey\"","timestamp":"2023-04-30T18:02:13.594Z"}
+{"level":"error","message":"Joi.integer is not a function","timestamp":"2023-04-30T18:05:43.243Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-30T18:06:53.837Z"}
+{"level":"error","message":"insert or update on table \"users_roles\" violates foreign key constraint \"users_roles_roles_id_fkey\"","timestamp":"2023-04-30T18:06:59.980Z"}
+{"level":"error","message":"Validation error","timestamp":"2023-04-30T18:07:05.580Z"}
+{"level":"error","message":"validateDatatable is not defined","timestamp":"2023-04-30T18:56:27.530Z"}
+{"level":"error","message":"datatable is not defined","timestamp":"2023-04-30T18:56:42.235Z"}
+{"level":"error","message":"datatable is not defined","timestamp":"2023-04-30T18:56:56.302Z"}
+{"level":"error","message":"users is not associated to users!","timestamp":"2023-04-30T18:57:16.250Z"}

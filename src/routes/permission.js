@@ -6,6 +6,7 @@ const mainController = require("../controllers/permission.controller")
 
 router.get("/permission/findAll", authMiddleware, mainController.findAll)
 router.get("/permission/findById/:id", authMiddleware, mainController.findById)
+router.post("/permission/datatable", authMiddleware, mainController.datatable)
 
 router.post("/permission/create", authMiddleware, mainController.create)
 router.post(

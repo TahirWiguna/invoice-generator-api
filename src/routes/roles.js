@@ -6,6 +6,7 @@ const mainController = require("../controllers/roles.controller")
 
 router.get("/role/findAll", authMiddleware, mainController.findAll)
 router.get("/role/findById/:id", authMiddleware, mainController.findById)
+router.post("/role/datatable", authMiddleware, mainController.datatable)
 
 router.post("/role/create", authMiddleware, mainController.create)
 router.put("/role/edit/:id", authMiddleware, mainController.update)

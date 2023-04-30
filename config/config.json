@@ -21,7 +21,12 @@
       "freezeTableName": true,
       "timestamps": false
     },
-    "logging": false
+    "logging": false,
+    "dialectOptions": {
+      "timezone": "Asia/Jakarta"
+    },
+    "timezone": "+07:00",
+    "useUTC": false
   },
   "test": {
     "username": "postgres",

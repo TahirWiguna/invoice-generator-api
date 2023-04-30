@@ -3,8 +3,9 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 
 const { responseType, response, responseCatch } = require("../utils/response")
-const { validateID } = require("../utils/joiValidator")
+const { validateID, validateDatatable } = require("../utils/joiValidator")
 const { logger } = require("../utils/logger")
+const { datatable } = require("../utils/datatable")
 
 const {
   checkExistingUsername,
@@ -59,6 +60,51 @@ exports.findById = async (req, res) => {
     if (!user) return response(res, responseType.NOT_FOUND, "User not found")
 
     return response(res, responseType.SUCCESS, "Get data success", user)
+  } catch (error) {
+    logger.error(error.message)
+    responseCatch(res, error)
+  }
+}
+
+exports.datatable = async (req, res) => {
+  const { rolesId } = req
+  try {
+    // Validation
+    const perm = await checkRolePermission(rolesId, "permission.read")
+    if (!perm) return response(res, responseType.FORBIDDEN)
+
+    const { error, value } = validateDatatable(req)
+    if (error) {
+      return response(
+        res,
+        responseType.VALIDATION_ERROR,
+        "Form Validation Error",
+        error.details
+      )
+    }
+
+    // Start transaction
+    const { draw, start, length, search, order, columns } = value
+
+    const orderColumn = order[0].column
+    const orderDir = order[0].dir
+    const orderColumnName = columns[orderColumn].data
+
+    const dttable = datatable(Users, value)
+
+    const users = await Users.findAndCountAll({
+      where: dttable,
+      order: [[orderColumnName, orderDir]],
+      offset: start,
+      limit: length,
+    })
+
+    return response(res, responseType.SUCCESS, "Get data success", {
+      draw,
+      recordsTotal: users.count,
+      recordsFiltered: users.rows.length,
+      data: users.rows,
+    })
   } catch (error) {
     logger.error(error.message)
     responseCatch(res, error)

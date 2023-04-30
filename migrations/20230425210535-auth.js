@@ -298,6 +298,12 @@ module.exports = {
       fields: ["name"],
       unique: true,
     })
+
+    // roles permission
+    await queryInterface.addIndex("roles_permission", {
+      fields: ["roles_id", "permission_id"],
+      unique: true,
+    })
   },
 
   down: async (queryInterface, Sequelize) => {

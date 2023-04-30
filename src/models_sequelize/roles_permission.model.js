@@ -53,6 +53,12 @@ module.exports = (sequelize, Sequelize) => {
     {
       sequelize,
       modelName: MODEL_NAME,
+      indexes: [
+        {
+          unique: true,
+          fields: ["roles_id", "permission_id"],
+        },
+      ],
     }
   )
 

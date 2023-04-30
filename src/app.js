@@ -8,6 +8,7 @@ const usersRouter = require("./routes/users")
 const rolesRouter = require("./routes/roles")
 const usersRolesRouter = require("./routes/users_roles")
 const permissionRouter = require("./routes/permission")
+const rolesPermissionRouter = require("./routes/roles_permission")
 
 // SETUP
 const express = require("express")
@@ -30,6 +31,7 @@ app.use(API_URL, usersRouter)
 app.use(API_URL, rolesRouter)
 app.use(API_URL, usersRolesRouter)
 app.use(API_URL, permissionRouter)
+app.use(API_URL, rolesPermissionRouter)
 
 // SYNC DB
 const db = require("./models_sequelize")

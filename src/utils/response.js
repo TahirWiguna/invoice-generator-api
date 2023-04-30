@@ -115,7 +115,8 @@ const responseCatch = (res, err) => {
   return response(
     res,
     resp,
-    err.message || "Some error occurred while connecting to databases."
+    err.message || "Some error occurred while connecting to databases.",
+    err
   )
 }
 

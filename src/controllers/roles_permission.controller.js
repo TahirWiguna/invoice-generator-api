@@ -1,38 +1,38 @@
 const Joi = require("joi")
-const { responseType, response, responseCatch } = require("../utils/response")
 
 const db = require("../models_sequelize")
 const Op = db.Sequelize.Op
-const UsersRoles = db.users_roles
-
-const { validateID, validateDatatable } = require("../utils/joiValidator")
-const { logger } = require("../utils/logger")
-const { datatable } = require("../utils/datatable")
+const RolesPermission = db.roles_permission
 
 const { checkRolePermission } = require("../models/permission.model")
 
+const { validateID, validateDatatable } = require("../utils/joiValidator")
+const { responseType, response, responseCatch } = require("../utils/response")
+const { logger } = require("../utils/logger")
+const { datatable } = require("../utils/datatable")
+
 exports.findAll = async (req, res) => {
+  const { rolesId } = req
   try {
     // Validation
-    const perm = await checkRolePermission(req.rolesId, "users_roles.read")
+    const perm = await checkRolePermission(rolesId, "roles_permission.read")
     if (!perm) return response(res, responseType.FORBIDDEN)
 
     // Start transaction
-    const usersRoles = await UsersRoles.findAll({
+    const roles_permission = await RolesPermission.findAll({
       include: [
         {
-          model: db.users,
-          as: "user",
-          attributes: ["id", "fullname", "email"],
+          model: db.roles,
+          attributes: ["id", "name"],
+        },
+        {
+          model: db.permission,
+          attributes: ["id", "name"],
         },
         {
           model: db.users,
           as: "creator",
           attributes: ["id", "fullname", "email"],
-        },
-        {
-          model: db.roles,
-          attributes: ["id", "name"],
         },
       ],
     })
@@ -41,7 +41,7 @@ exports.findAll = async (req, res) => {
       res,
       responseType.SUCCESS,
       "Get all data success",
-      usersRoles
+      roles_permission
     )
   } catch (error) {
     logger.error(error.message)
@@ -50,39 +50,46 @@ exports.findAll = async (req, res) => {
 }
 
 exports.findById = async (req, res) => {
+  const { rolesId } = req
   const { id } = req.params
 
   try {
     // Validation
-    const perm = await checkRolePermission(req.rolesId, "users_roles.read")
+    const perm = await checkRolePermission(rolesId, "roles_permission.read")
     if (!perm) return response(res, responseType.FORBIDDEN)
 
     const idValidationResult = validateID(id, res)
     if (idValidationResult) return idValidationResult
 
     // Start transaction
-    const role = await UsersRoles.findOne({
-      where: { id },
+    const roles_permission = await RolesPermission.findByPk(id, {
       include: [
-        {
-          model: db.users,
-          attributes: ["id", "fullname", "email"],
-        },
-        {
-          model: db.users,
-          attributes: ["id", "fullname", "email"],
-          as: "creator",
-        },
         {
           model: db.roles,
           attributes: ["id", "name"],
         },
+        {
+          model: db.permission,
+          attributes: ["id", "name"],
+        },
+        {
+          model: db.users,
+          as: "creator",
+          attributes: ["id", "fullname", "email"],
+        },
       ],
     })
 
-    if (!role) return response(res, responseType.NOT_FOUND, "Role not found")
+    if (!roles_permission) {
+      return response(res, responseType.NOT_FOUND, "Data not found")
+    }
 
-    return response(res, responseType.SUCCESS, "Get data success", role)
+    return response(
+      res,
+      responseType.SUCCESS,
+      "Get data by id success",
+      roles_permission
+    )
   } catch (error) {
     logger.error(error.message)
     responseCatch(res, error)
@@ -113,9 +120,9 @@ exports.datatable = async (req, res) => {
     const orderDir = order[0].dir
     const orderColumnName = columns[orderColumn].data
 
-    const dttable = datatable(UsersRoles, value)
+    const dttable = datatable(RolesPermission, value)
 
-    const usersRoles = await UsersRoles.findAndCountAll({
+    const rolesPermission = await RolesPermission.findAndCountAll({
       where: dttable,
       order: [[orderColumnName, orderDir]],
       offset: start,
@@ -126,23 +133,14 @@ exports.datatable = async (req, res) => {
           as: "creator",
           attributes: ["id", "fullname", "email"],
         },
-        {
-          model: db.users,
-          as: "user",
-          attributes: ["id", "fullname", "email"],
-        },
-        {
-          model: db.roles,
-          attributes: ["id", "name"],
-        },
       ],
     })
 
     return response(res, responseType.SUCCESS, "Get data success", {
       draw,
-      recordsTotal: usersRoles.count,
-      recordsFiltered: usersRoles.rows.length,
-      data: usersRoles.rows,
+      recordsTotal: rolesPermission.count,
+      recordsFiltered: rolesPermission.rows.length,
+      data: rolesPermission.rows,
     })
   } catch (error) {
     logger.error(error.message)
@@ -151,18 +149,17 @@ exports.datatable = async (req, res) => {
 }
 
 exports.create = async (req, res) => {
-  const { user, rolesId, body } = req
+  const { rolesId, user } = req
   try {
-    // Validation
-    const perm = await checkRolePermission(rolesId, "users_roles.create")
+    const perm = await checkRolePermission(rolesId, "roles_permission.create")
     if (!perm) return response(res, responseType.FORBIDDEN)
 
     const rules = Joi.object({
-      users_id: Joi.number().required(),
       roles_id: Joi.number().required(),
+      permission_id: Joi.number().required(),
     })
 
-    const { error, value } = rules.validate(req.body, { abortEarly: false })
+    const { error, value } = rules.validate(req.body)
     if (error) {
       return response(
         res,
@@ -172,14 +169,20 @@ exports.create = async (req, res) => {
       )
     }
 
-    // Start transaction
-    let data = {
-      ...value,
-      created_by: user.id,
-    }
-    const role = await UsersRoles.create(data)
+    const { roles_id, permission_id } = value
 
-    return response(res, responseType.SUCCESS, "Create data success", role)
+    const roles_permission = await RolesPermission.create({
+      roles_id: roles_id,
+      permission_id: permission_id,
+      created_by: user.id,
+    })
+
+    return response(
+      res,
+      responseType.SUCCESS,
+      "Create data success",
+      roles_permission
+    )
   } catch (error) {
     logger.error(error.message)
     responseCatch(res, error)
@@ -187,19 +190,20 @@ exports.create = async (req, res) => {
 }
 
 exports.update = async (req, res) => {
-  const { user, rolesId, body, params } = req
-  const { id } = params
+  const { rolesId, user } = req
+  const { id } = req.params
+
   try {
     // Validation
-    const perm = await checkRolePermission(rolesId, "users_roles.update")
+    const perm = await checkRolePermission(rolesId, "roles_permission.update")
     if (!perm) return response(res, responseType.FORBIDDEN)
 
     const idValidationResult = validateID(id, res)
     if (idValidationResult) return idValidationResult
 
     const rules = Joi.object({
-      users_id: Joi.number().required(),
       roles_id: Joi.number().required(),
+      permission_id: Joi.number().required(),
     })
 
     const { error, value } = rules.validate(req.body, { abortEarly: false })
@@ -213,18 +217,26 @@ exports.update = async (req, res) => {
     }
 
     // Start transaction
-    let updateData = {}
-    if (value.users_id) updateData.users_id = value.users_id
-    if (value.roles_id) updateData.roles_id = value.roles_id
-    updateData.updated_by = user.id
+    const { roles_id, permission_id } = value
 
-    const role = await UsersRoles.update(updateData, {
-      where: { id: id },
-      returning: true,
-    })
-    if (!role) return response(res, responseType.NOT_FOUND, "Role not found")
+    const roles_permission = await RolesPermission.update(
+      {
+        roles_id: roles_id,
+        permission_id: permission_id,
+        updated_by: user.id,
+      },
+      { where: { id }, returning: true }
+    )
 
-    return response(res, responseType.SUCCESS, "Update data success", role[1])
+    if (!roles_permission)
+      return response(res, responseType.NOT_FOUND, "Data not found")
+
+    return response(
+      res,
+      responseType.SUCCESS,
+      "Update data success",
+      roles_permission[1]
+    )
   } catch (error) {
     logger.error(error.message)
     responseCatch(res, error)
@@ -232,27 +244,24 @@ exports.update = async (req, res) => {
 }
 
 exports.delete = async (req, res) => {
-  const { rolesId, params } = req
-  const { id } = params
+  const { rolesId } = req
+  const { id } = req.params
 
   try {
     // Validation
-    const perm = await checkRolePermission(rolesId, "users_roles.delete")
+    const perm = await checkRolePermission(rolesId, "roles_permission.delete")
     if (!perm) return response(res, responseType.FORBIDDEN)
 
     const idValidationResult = validateID(id, res)
     if (idValidationResult) return idValidationResult
 
     // Start transaction
-    const role = await UsersRoles.destroy({ where: { id: id } })
-    if (!role) return response(res, responseType.NOT_FOUND, "Role not found")
+    const roles_permission = await RolesPermission.destroy({ where: { id } })
 
-    return response(
-      res,
-      responseType.SUCCESS,
-      "Data has been deleted successfully",
-      role
-    )
+    if (!roles_permission)
+      return response(res, responseType.NOT_FOUND, "Data not found")
+
+    return response(res, responseType.SUCCESS, "Delete data success")
   } catch (error) {
     logger.error(error.message)
     responseCatch(res, error)

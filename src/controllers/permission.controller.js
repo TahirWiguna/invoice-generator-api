@@ -4,10 +4,12 @@ const db = require("../models_sequelize")
 const Op = db.Sequelize.Op
 const Permission = db.permission
 
-const { validateID } = require("../utils/joiValidator")
 const { checkRolePermission } = require("../models/permission.model")
+
+const { validateID, validateDatatable } = require("../utils/joiValidator")
 const { responseType, response, responseCatch } = require("../utils/response")
 const { logger } = require("../utils/logger")
+const { datatable } = require("../utils/datatable")
 
 exports.findAll = async (req, res) => {
   const { rolesId } = req
@@ -18,7 +20,15 @@ exports.findAll = async (req, res) => {
     if (!perm) return response(res, responseType.FORBIDDEN)
 
     // Start transaction
-    const permission = await Permission.findAll()
+    const permission = await Permission.findAll({
+      include: [
+        {
+          model: db.users,
+          as: "creator",
+          attributes: ["id", "fullname", "email"],
+        },
+      ],
+    })
 
     return response(
       res,
@@ -47,12 +57,71 @@ exports.findById = async (req, res) => {
     // Start transaction
     const permission = await Permission.findOne({
       where: { id },
+      include: [
+        {
+          model: db.users,
+          as: "creator",
+          attributes: ["id", "fullname", "email"],
+        },
+      ],
     })
 
     if (!permission)
       return response(res, responseType.NOT_FOUND, "Permission not found")
 
     return response(res, responseType.SUCCESS, "Get data success", permission)
+  } catch (error) {
+    logger.error(error.message)
+    responseCatch(res, error)
+  }
+}
+
+exports.datatable = async (req, res) => {
+  const { rolesId } = req
+  try {
+    // Validation
+    const perm = await checkRolePermission(rolesId, "permission.read")
+    if (!perm) return response(res, responseType.FORBIDDEN)
+
+    const { error, value } = validateDatatable(req)
+    if (error) {
+      return response(
+        res,
+        responseType.VALIDATION_ERROR,
+        "Form Validation Error",
+        error.details
+      )
+    }
+
+    // Start transaction
+    const { draw, start, length, search, order, columns } = value
+
+    const orderColumn = order[0].column
+    const orderDir = order[0].dir
+    const orderColumnName = columns[orderColumn].data
+
+    const dttable = datatable(Permission, value)
+
+    const permission = await Permission.findAndCountAll({
+      where: dttable,
+      order: [[orderColumnName, orderDir]],
+      offset: start,
+      limit: length,
+      include: [
+        {
+          model: db.users,
+          as: "creator",
+          attributes: ["id", "fullname", "email"],
+        },
+      ],
+    })
+
+    return response(res, responseType.SUCCESS, "Get data success", {
+      draw,
+      recordsTotal: permission.count,
+      recordsFiltered: permission.rows.length,
+      data: permission.rows,
+    })
   } catch (error) {
     logger.error(error.message)
     responseCatch(res, error)
@@ -73,8 +142,15 @@ exports.create = async (req, res) => {
       module: Joi.string().required(),
     })
 
-    const { error, value } = rules.validate(req.body)
-    if (error) return response(res, responseType.BAD_REQUEST, error.message)
+    const { error, value } = rules.validate(req.body, { abortEarly: false })
+    if (error) {
+      return response(
+        res,
+        responseType.VALIDATION_ERROR,
+        "Form Validation Error",
+        error.details
+      )
+    }
 
     // Start transaction
     var data = {
@@ -242,8 +318,15 @@ exports.update = async (req, res) => {
       module: Joi.string().optional(),
     })
 
-    const { error, value } = rules.validate(req.body)
-    if (error) return response(res, responseType.BAD_REQUEST, error.message)
+    const { error, value } = rules.validate(req.body, { abortEarly: false })
+    if (error) {
+      return response(
+        res,
+        responseType.VALIDATION_ERROR,
+        "Form Validation Error",
+        error.details
+      )
+    }
 
     // Start transaction
     const { name, description, module } = value
@@ -257,12 +340,18 @@ exports.update = async (req, res) => {
 
     const permission = await Permission.update(updateData, {
       where: { id },
+      returning: true,
     })
 
     if (!permission)
       return response(res, responseType.NOT_FOUND, "Permission not found")
 
-    return response(res, responseType.SUCCESS, "Update data success")
+    return response(
+      res,
+      responseType.SUCCESS,
+      "Update data success",
+      permission[1]
+    )
   } catch (error) {
     logger.error(error.message)
     responseCatch(res, error)
@@ -312,8 +401,15 @@ exports.deleteModule = async (req, res) => {
       module: Joi.string().required(),
     })
 
-    const { error, value } = rules.validate(req.body)
-    if (error) return response(res, responseType.BAD_REQUEST, error.message)
+    const { error, value } = rules.validate(req.body, { abortEarly: false })
+    if (error) {
+      return response(
+        res,
+        responseType.VALIDATION_ERROR,
+        "Form Validation Error",
+        error.details
+      )
+    }
 
     // Start transaction
     const { module } = value
