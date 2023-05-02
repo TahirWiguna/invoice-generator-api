@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 
 const authMiddleware = require("../middleware/auth.middleware")
-const mainController = require("../controllers/permission.controller")
+const mainController = require("../controllers/auth/permission.controller")
 
 router.get("/permission/findAll", authMiddleware, mainController.findAll)
 router.get("/permission/findById/:id", authMiddleware, mainController.findById)

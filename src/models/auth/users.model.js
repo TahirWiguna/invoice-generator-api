@@ -1,5 +1,5 @@
-const { response, responseType } = require("../utils/response")
-const db = require("../models_sequelize")
+const { response, responseType } = require("../../utils/response")
+const db = require("../../models_sequelize")
 const { Op } = require("sequelize")
 const Users = db.users
 

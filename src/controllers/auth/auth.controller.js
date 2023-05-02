@@ -2,11 +2,15 @@ const Joi = require("joi")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 
-const { responseType, response, responseCatch } = require("../utils/response")
-const { validateID } = require("../utils/joiValidator")
-const { logger } = require("../utils/logger")
+const {
+  responseType,
+  response,
+  responseCatch,
+} = require("../../utils/response")
+const { validateID } = require("../../utils/joiValidator")
+const { logger } = require("../../utils/logger")
 
-const db = require("../models_sequelize")
+const db = require("../../models_sequelize")
 const Op = db.Sequelize.Op
 const Users = db.users
 const UsersTokens = db.users_token

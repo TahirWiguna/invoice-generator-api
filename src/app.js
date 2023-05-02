@@ -34,15 +34,15 @@ app.use(API_URL, permissionRouter)
 app.use(API_URL, rolesPermissionRouter)
 
 // SYNC DB
-const db = require("./models_sequelize")
-db.sequelize
-  .sync()
-  .then(() => {
-    console.log("Synced db.")
-  })
-  .catch((err) => {
-    console.log("Failed to sync db: " + err.message)
-  })
+// const db = require("./models_sequelize")
+// db.sequelize
+//   .sync()
+//   .then(() => {
+//     console.log("Synced db.")
+//   })
+//   .catch((err) => {
+//     console.log("Failed to sync db: " + err.message)
+//   })
 
 // LISTEN
 app.listen(PORT, () => {

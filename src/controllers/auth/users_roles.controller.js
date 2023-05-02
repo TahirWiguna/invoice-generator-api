@@ -1,15 +1,19 @@
 const Joi = require("joi")
-const { responseType, response, responseCatch } = require("../utils/response")
+const {
+  responseType,
+  response,
+  responseCatch,
+} = require("../../utils/response")
 
-const db = require("../models_sequelize")
+const db = require("../../models_sequelize")
 const Op = db.Sequelize.Op
 const UsersRoles = db.users_roles
 
-const { validateID, validateDatatable } = require("../utils/joiValidator")
-const { logger } = require("../utils/logger")
-const { datatable } = require("../utils/datatable")
+const { validateID, validateDatatable } = require("../../utils/joiValidator")
+const { logger } = require("../../utils/logger")
+const { datatable } = require("../../utils/datatable")
 
-const { checkRolePermission } = require("../models/permission.model")
+const { checkRolePermission } = require("../../models/auth/permission.model")
 
 exports.findAll = async (req, res) => {
   try {

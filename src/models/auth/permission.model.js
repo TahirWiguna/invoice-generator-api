@@ -1,5 +1,5 @@
-const { response, responseType } = require("../utils/response")
-const db = require("../models_sequelize")
+const { response, responseType } = require("../../utils/response")
+const db = require("../../models_sequelize")
 const { Op } = require("sequelize")
 const Permission = db.permission
 const RolesPermission = db.roles_permission
