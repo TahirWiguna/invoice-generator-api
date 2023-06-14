@@ -1,24 +1,24 @@
 "use strict";
 const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
-  class master_payment_method extends Model {
+  class client extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      master_payment_method.belongsTo(models.users, {
+      client.belongsTo(models.users, {
         foreignKey: "created_by",
         as: "creator",
       });
-      master_payment_method.belongsTo(models.users, {
+      client.belongsTo(models.users, {
         foreignKey: "updated_by",
         as: "updater",
       });
     }
   }
-  master_payment_method.init(
+  client.init(
     {
       id: {
         allowNull: false,
@@ -26,14 +26,11 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         type: DataTypes.BIGINT,
       },
-      name: {
-        type: DataTypes.STRING(100),
-      },
-      deleted: {
-        allowNull: false,
-        type: DataTypes.BOOLEAN,
-        defaultValue: false,
-      },
+      company_name: DataTypes.STRING,
+      name: DataTypes.STRING,
+      address: DataTypes.STRING,
+      email: DataTypes.STRING,
+      phone_number: DataTypes.STRING,
       created_at: {
         allowNull: false,
         type: DataTypes.DATE,
@@ -43,7 +40,10 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.BIGINT,
       },
-      updated_at: DataTypes.DATE,
+      updated_at: {
+        allowNull: true,
+        type: DataTypes.DATE,
+      },
       updated_by: {
         allowNull: true,
         type: DataTypes.BIGINT,
@@ -51,17 +51,24 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: "master_payment_method",
+      modelName: "client",
       indexes: [
         {
           unique: true,
-          fields: ["name"],
+          fields: ["company_name"],
           where: {
-            deleted: false,
+            deleted: true,
+          },
+        },
+        {
+          unique: true,
+          fields: ["email"],
+          where: {
+            deleted: true,
           },
         },
       ],
     }
   );
-  return master_payment_method;
+  return client;
 };

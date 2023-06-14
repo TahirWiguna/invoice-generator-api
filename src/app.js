@@ -1,37 +1,57 @@
-const requestIp = require("request-ip")
-const helmet = require("helmet")
+const requestIp = require("request-ip");
+const helmet = require("helmet");
 
-const { logger, logError, logRequest } = require("./utils/logger")
+const { logger, logError, logRequest } = require("./utils/logger");
+const sendEmail = require("./utils/email");
 
-const authRouter = require("./routes/auth")
-const usersRouter = require("./routes/users")
-const rolesRouter = require("./routes/roles")
-const usersRolesRouter = require("./routes/users_roles")
-const permissionRouter = require("./routes/permission")
-const rolesPermissionRouter = require("./routes/roles_permission")
+const authRouter = require("./routes/auth/auth");
+const usersRouter = require("./routes/auth/users");
+const rolesRouter = require("./routes/auth/roles");
+const usersRolesRouter = require("./routes/auth/users_roles");
+const permissionRouter = require("./routes/auth/permission");
+const rolesPermissionRouter = require("./routes/auth/roles_permission");
+
+const clientRouter = require("./routes/client");
+const itemRouter = require("./routes/item");
+const invoiceRouter = require("./routes/invoice");
+const paymentMethodRouter = require("./routes/payment_method");
 
 // SETUP
-const express = require("express")
-const app = express()
-const PORT = 3000
+const express = require("express");
+const app = express();
+const PORT = 3000;
 
-const API_URL = "/v1/api"
+const API_URL = "/v1/api";
 
 // MIDDLEWARE
-app.use(helmet())
-app.use(express.json())
-app.use(errorHandler)
-app.use(requestIp.mw())
-app.use(logRequest)
-app.use(logError)
+app.use(helmet());
+app.use(express.json());
+app.use(errorHandler);
+app.use(requestIp.mw());
+app.use(logRequest);
+app.use(logError);
 
 // ROUTER
-app.use(API_URL, authRouter)
-app.use(API_URL, usersRouter)
-app.use(API_URL, rolesRouter)
-app.use(API_URL, usersRolesRouter)
-app.use(API_URL, permissionRouter)
-app.use(API_URL, rolesPermissionRouter)
+app.use(API_URL, authRouter);
+app.use(API_URL, usersRouter);
+app.use(API_URL, rolesRouter);
+app.use(API_URL, usersRolesRouter);
+app.use(API_URL, permissionRouter);
+app.use(API_URL, rolesPermissionRouter);
+
+app.use(API_URL, clientRouter);
+app.use(API_URL, itemRouter);
+app.use(API_URL, invoiceRouter);
+app.use(API_URL, paymentMethodRouter);
+
+app.get("/email", async (req, res) => {
+  const send = await sendEmail(
+    "mtahirwiguna@gmail.com",
+    "Invoice Generator",
+    "<div>Ini adalah invoice gen</div><div>haha</div>"
+  );
+  res.send(send);
+});
 
 // SYNC DB
 // const db = require("./models_sequelize")
@@ -46,16 +66,21 @@ app.use(API_URL, rolesPermissionRouter)
 
 // LISTEN
 app.listen(PORT, () => {
-  console.log(`App is running on PORT ${PORT}`)
-})
+  console.log(`App is running on PORT ${PORT} | ENV ${process.env.NODE_ENV}`);
+});
 
+module.exports = app;
+
+// Error handler
 function errorHandler(err, req, res, next) {
   if (err.code === "23505") {
     // Handle unique constraint violation error
-    res.status(409).json({ message: "Data already exist" })
+    res.status(409).json({ message: "Data already exist" });
   } else {
-    res
-      .status(err.status)
-      .json({ message: "Oops! Something went wrong.", error: err.message, err })
+    res.status(err.status).json({
+      message: "Oops! Something went wrong.",
+      error: err.message,
+      err,
+    });
   }
 }

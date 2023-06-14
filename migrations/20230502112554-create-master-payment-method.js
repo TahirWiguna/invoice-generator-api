@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -20,6 +20,7 @@ module.exports = {
       created_at: {
         allowNull: false,
         type: Sequelize.DATE,
+        defaultValue: Sequelize.fn("now"),
       },
       created_by: {
         allowNull: false,
@@ -47,17 +48,17 @@ module.exports = {
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
       },
-    })
+    });
 
     await queryInterface.addIndex("master_payment_method", {
       unique: true,
       fields: ["name"],
       where: {
-        deleted: true,
+        deleted: false,
       },
-    })
+    });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("master_payment_method")
+    await queryInterface.dropTable("master_payment_method");
   },
-}
+};

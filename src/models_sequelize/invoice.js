@@ -1,5 +1,6 @@
-"use strict"
-const { Model } = require("sequelize")
+"use strict";
+const { Model } = require("sequelize");
+const { format } = require("../utils/general");
 module.exports = (sequelize, DataTypes) => {
   class invoice extends Model {
     /**
@@ -11,19 +12,26 @@ module.exports = (sequelize, DataTypes) => {
       invoice.belongsTo(models.users, {
         foreignKey: "created_by",
         as: "creator",
-      })
+      });
       invoice.belongsTo(models.users, {
         foreignKey: "updated_by",
         as: "updater",
-      })
+      });
       invoice.belongsTo(models.client, {
         foreignKey: "client_id",
         as: "client",
-      })
+      });
       invoice.hasMany(models.invoice_item, {
         foreignKey: "invoice_id",
         as: "items",
-      })
+      });
+    }
+
+    get amount_paid_formatted() {
+      return `${format(this.amount_paid)}`;
+    }
+    get total_amount_formatted() {
+      return `${format(this.total_amount)}`;
     }
   }
   invoice.init(
@@ -36,14 +44,17 @@ module.exports = (sequelize, DataTypes) => {
       },
       due_date: DataTypes.DATE,
       client_id: DataTypes.BIGINT,
-      total_amount: DataTypes.DECIMAL(15, 2),
-      amount_paid: DataTypes.DECIMAL(15, 2),
-      payment_method: DataTypes.ENUM([
-        "cash",
-        "transfer",
-        "credit_card",
-        "debit_card",
-      ]),
+      total_amount: {
+        allowNull: false,
+        type: DataTypes.DECIMAL(15, 2),
+        defaultValue: 0,
+      },
+      amount_paid: {
+        allowNull: false,
+        type: DataTypes.DECIMAL(15, 2),
+        defaultValue: 0,
+      },
+      payment_method_id: DataTypes.BIGINT,
       payment_date: DataTypes.DATE,
       status: DataTypes.ENUM(["unpaid", "partial", "paid"]),
       deleted: {
@@ -54,6 +65,7 @@ module.exports = (sequelize, DataTypes) => {
       created_at: {
         allowNull: false,
         type: DataTypes.DATE,
+        defaultValue: DataTypes.fn("now"),
       },
       created_by: {
         allowNull: false,
@@ -72,6 +84,6 @@ module.exports = (sequelize, DataTypes) => {
       sequelize,
       modelName: "invoice",
     }
-  )
-  return invoice
-}
+  );
+  return invoice;
+};

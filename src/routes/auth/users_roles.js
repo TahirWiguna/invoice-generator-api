@@ -1,0 +1,15 @@
+const express = require("express");
+const router = express.Router();
+
+const authMiddleware = require("../../middleware/auth.middleware");
+const mainController = require("../../controllers/auth/users_roles.controller");
+
+router.get("/user_role/findAll", authMiddleware, mainController.findAll);
+router.get("/user_role/findById/:id", authMiddleware, mainController.findById);
+router.post("/user_role/datatable", authMiddleware, mainController.datatable);
+
+router.post("/user_role/create", authMiddleware, mainController.create);
+router.put("/user_role/edit/:id", authMiddleware, mainController.update);
+router.delete("/user_role/delete/:id", authMiddleware, mainController.delete);
+
+module.exports = router;

@@ -624,3 +624,468 @@
 {"body":{"columns":[{"data":"id","name":"id","orderable":true,"search":{"regex":false,"value":""},"searchable":true},{"data":"creator.fullname","name":"creator","orderable":true,"search":{"regex":false,"value":"xxxx"},"searchable":false},{"data":"created_at","name":"created_at","orderable":true,"search":{"regex":false,"value":"2023-04-30"},"searchable":true}],"draw":1,"length":5,"order":[{"column":0,"dir":"desc"}],"search":{"regex":false,"value":""},"start":0},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-30T18:59:25.219Z","url":"/v1/api/role/datatable"}
 {"body":{"columns":[{"data":"id","name":"id","orderable":true,"search":{"regex":false,"value":""},"searchable":true},{"data":"creator.fullname","name":"creator","orderable":true,"search":{"regex":false,"value":"xxxx"},"searchable":false},{"data":"created_at","name":"created_at","orderable":true,"search":{"regex":false,"value":"2023-04-30"},"searchable":true}],"draw":1,"length":5,"order":[{"column":0,"dir":"desc"}],"search":{"regex":false,"value":""},"start":0},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-30T19:00:43.501Z","url":"/v1/api/user_role/datatable"}
 {"body":{"columns":[{"data":"id","name":"id","orderable":true,"search":{"regex":false,"value":""},"searchable":true},{"data":"creator.fullname","name":"creator","orderable":true,"search":{"regex":false,"value":"xxxx"},"searchable":false},{"data":"created_at","name":"created_at","orderable":true,"search":{"regex":false,"value":"2023-04-30"},"searchable":true}],"draw":1,"length":5,"order":[{"column":0,"dir":"desc"}],"search":{"regex":false,"value":""},"start":0},"level":"info","message":"Request info","method":"POST","timestamp":"2023-04-30T19:01:16.140Z","url":"/v1/api/user_role/datatable"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-03T16:44:27.819Z","url":"/login"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-03T16:45:14.158Z","url":"/login"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang","phone_number":"123456789"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-03T16:45:14.170Z","url":"/clients"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-03T16:46:07.208Z","url":"/login"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang","phone_number":"123456789"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-03T16:46:07.220Z","url":"/clients"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-03T16:46:07.238Z","url":"/clients"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-03T16:46:07.243Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-03T16:46:07.248Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-03T16:46:07.254Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-03T16:46:07.260Z","url":"/clients/999999999999"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-03T16:46:07.270Z","url":"/clients/undefined"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-03T16:46:07.276Z","url":"/clients/undefined"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"","name":"Ujang edited"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-03T16:46:07.282Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-03T16:46:07.287Z","url":"/clients/undefined"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T11:55:35.851Z","url":"/login"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang","phone_number":"123456789"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T11:55:35.864Z","url":"/clients"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T11:55:35.881Z","url":"/clients"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T11:55:35.886Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T11:55:35.891Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T11:55:35.897Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T11:55:35.902Z","url":"/clients/999999999999"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T11:55:35.910Z","url":"/clients/undefined"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T11:55:35.917Z","url":"/clients/undefined"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"","name":"Ujang edited"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T11:55:35.923Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-07T11:55:35.929Z","url":"/clients/undefined"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:16:03.744Z","url":"/login"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang","phone_number":"123456789"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:16:03.757Z","url":"/clients"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:16:03.775Z","url":"/clients"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:16:03.781Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:16:03.788Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:16:03.793Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:16:03.799Z","url":"/clients/999999999999"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:16:03.806Z","url":"/clients/undefined"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:16:03.812Z","url":"/clients/undefined"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"","name":"Ujang edited"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:16:03.820Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-07T12:16:03.824Z","url":"/clients/undefined"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:20:05.992Z","url":"/login"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang","phone_number":"123456789"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:20:06.005Z","url":"/clients"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:20:06.022Z","url":"/clients"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:20:06.028Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:20:06.033Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:20:06.039Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:20:06.045Z","url":"/clients/999999999999"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:20:06.052Z","url":"/clients/undefined"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:20:06.059Z","url":"/clients/undefined"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"","name":"Ujang edited"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:20:06.066Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-07T12:20:06.071Z","url":"/clients/undefined"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:36:36.159Z","url":"/login"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang","phone_number":"123456789"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:36:36.172Z","url":"/clients"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:36:36.190Z","url":"/clients"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:36:36.196Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:36:36.201Z","url":"/clients"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:36:36.207Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:36:36.213Z","url":"/clients/999999999999"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:36:36.222Z","url":"/clients/undefined"}
+{"body":{"company_name":"PT. PAJERO"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:36:36.228Z","url":"/clients/undefined"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"","name":"Ujang edited"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T12:36:36.243Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-07T12:36:36.252Z","url":"/clients/undefined"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:38:35.350Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:38:40.799Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:38:48.664Z","url":"/v1/api/role_permission/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:38:55.280Z","url":"/v1/api/auth/login"}
+{"level":"error","message":"Template.isTemplate is not a function","timestamp":"2023-05-07T12:38:55.315Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:39:01.505Z","url":"/v1/api/auth/login"}
+{"level":"error","message":"Template.isTemplate is not a function","timestamp":"2023-05-07T12:39:01.505Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:39:29.755Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:39:32.991Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:39:34.240Z","url":"/v1/api/client/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:39:37.842Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:41:04.547Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:41:22.703Z","url":"/v1/api/client/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:41:24.784Z","url":"/v1/api/auth/login"}
+{"level":"error","message":"secretOrPrivateKey must have a value","timestamp":"2023-05-07T12:41:24.950Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:41:28.545Z","url":"/v1/api/auth/login"}
+{"level":"error","message":"secretOrPrivateKey must have a value","timestamp":"2023-05-07T12:41:28.606Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:42:14.866Z","url":"/v1/api/auth/login"}
+{"level":"error","message":"secretOrPrivateKey must have a value","timestamp":"2023-05-07T12:42:14.969Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:42:31.030Z","url":"/v1/api/auth/login"}
+{"level":"error","message":"secretOrPrivateKey must have a value","timestamp":"2023-05-07T12:42:31.195Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:44:02.911Z","url":"/v1/api/auth/login"}
+{"level":"error","message":"secretOrPrivateKey must have a value","timestamp":"2023-05-07T12:44:03.077Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:44:48.642Z","url":"/v1/api/auth/login"}
+{"level":"error","message":"\"expiresIn\" should be a number of seconds or string representing a timespan","timestamp":"2023-05-07T12:44:48.809Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:45:32.794Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:45:43.852Z","url":"/v1/api/client/findAll"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"client"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:00.588Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"client"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:07.999Z","url":"/v1/api/permission/createTemplate"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:46:20.572Z","url":"/v1/api/role_permission/findAll"}
+{"body":{"permission_id":"26","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:37.193Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"27","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:40.292Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"28","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:42.504Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"29","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:44.709Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"30","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:48.213Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"31","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:50.693Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"32","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:46:52.666Z","url":"/v1/api/role_permission/create"}
+{"level":"error","message":"insert or update on table \"roles_permission\" violates foreign key constraint \"roles_permission_permission_id_fkey\"","timestamp":"2023-05-07T12:46:52.677Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T12:47:30.585Z","url":"/v1/api/client/findAll"}
+{"body":{"columns":[{"data":"id","name":"id","orderable":true,"search":{"regex":false,"value":""},"searchable":true},{"data":"creator.fullname","name":"creator","orderable":true,"search":{"regex":false,"value":"xxxx"},"searchable":false},{"data":"created_at","name":"created_at","orderable":true,"search":{"regex":false,"value":"2023-04-30"},"searchable":true}],"draw":1,"length":5,"order":[{"column":0,"dir":"desc"}],"search":{"regex":false,"value":""},"start":0},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:47:35.745Z","url":"/v1/api/role_permission/datatable"}
+{"body":{"columns":[{"data":"id","name":"id","orderable":true,"search":{"regex":false,"value":""},"searchable":true},{"data":"creator.fullname","name":"creator","orderable":true,"search":{"regex":false,"value":"xxxx"},"searchable":false},{"data":"created_at","name":"created_at","orderable":true,"search":{"regex":false,"value":"2023-04-30"},"searchable":true}],"draw":1,"length":5,"order":[{"column":0,"dir":"desc"}],"search":{"regex":false,"value":""},"start":0},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:48:08.534Z","url":"/v1/api/client/datatable"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T12:49:00.835Z","url":"/v1/api/client/create"}
+{"level":"error","message":"notNull Violation: client.created_at cannot be null,\nnotNull Violation: client.created_by cannot be null","timestamp":"2023-05-07T12:49:00.900Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:25:16.875Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:25:20.190Z","url":"/v1/api/client/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:25:31.616Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:25:39.951Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:25:41.677Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:25:47.374Z","url":"/v1/api/role_permission/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:26:50.676Z","url":"/v1/api/role_permission/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:26:52.993Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:27:02.663Z","url":"/v1/api/client/findAll"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:27:08.543Z","url":"/v1/api/client/create"}
+{"level":"error","message":"notNull Violation: client.created_by cannot be null","timestamp":"2023-05-07T13:27:08.558Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:27:14.190Z","url":"/v1/api/client/create"}
+{"level":"error","message":"notNull Violation: client.created_by cannot be null","timestamp":"2023-05-07T13:27:14.201Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:27:30.700Z","url":"/v1/api/client/create"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:27:45.533Z","url":"/v1/api/client/findAll"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:27:52.391Z","url":"/v1/api/client/create"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:27:53.910Z","url":"/v1/api/client/create"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:27:56.811Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:30:36.484Z","url":"/v1/api/client/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:30:38.891Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T13:30:46.386Z","url":"/v1/api/client/findAll"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:30:49.274Z","url":"/v1/api/client/create"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:30:50.485Z","url":"/v1/api/client/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T13:30:50.503Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T13:31:34.308Z","url":"/v1/api/client/edit/1"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'error')","timestamp":"2023-05-07T13:31:34.479Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T13:31:36.882Z","url":"/v1/api/client/edit/1"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'error')","timestamp":"2023-05-07T13:31:36.892Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T13:32:09.941Z","url":"/v1/api/client/edit/1"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'error')","timestamp":"2023-05-07T13:32:09.991Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T13:32:35.416Z","url":"/v1/api/client/edit/1"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'error')","timestamp":"2023-05-07T13:32:35.541Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-07T13:33:18.010Z","url":"/v1/api/client/edit/1"}
+{"body":{"columns":[{"data":"id","name":"id","orderable":true,"search":{"regex":false,"value":""},"searchable":true},{"data":"creator.fullname","name":"creator","orderable":true,"search":{"regex":false,"value":"xxxx"},"searchable":false},{"data":"created_at","name":"created_at","orderable":true,"search":{"regex":false,"value":"2023-04-30"},"searchable":true}],"draw":1,"length":5,"order":[{"column":0,"dir":"desc"}],"search":{"regex":false,"value":""},"start":0},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:48:35.632Z","url":"/v1/api/client/datatable"}
+{"body":{"draw":1,"length":5,"order":[{"column":0,"dir":"desc"}],"search":{"regex":false,"value":""},"start":0},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:48:43.701Z","url":"/v1/api/client/datatable"}
+{"level":"error","message":"Cannot read properties of undefined (reading '0')","timestamp":"2023-05-07T13:48:43.724Z"}
+{"body":{"columns":[{"data":"id","name":"id","orderable":true,"search":{"regex":false,"value":""},"searchable":true}],"draw":1,"length":5,"order":[{"column":0,"dir":"desc"}],"search":{"regex":false,"value":""},"start":0},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T13:48:52.201Z","url":"/v1/api/client/datatable"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:17:07.342Z","url":"/v1/api/item/findAll"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"item"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:17:20.809Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"permission_id":"31","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:17:49.945Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"32","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:17:52.941Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"33","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:17:55.015Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"34","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:17:56.554Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"35","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:17:58.218Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"36","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:17:59.717Z","url":"/v1/api/role_permission/create"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:18:03.147Z","url":"/v1/api/item/findAll"}
+{"level":"error","message":"relation \"item\" does not exist","timestamp":"2023-05-07T15:18:03.159Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:19:04.912Z","url":"/v1/api/item/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:19:08.669Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:19:17.409Z","url":"/v1/api/item/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:19:35.346Z","url":"/v1/api/item/findAll"}
+{"body":{"name":"AAA","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:20:26.479Z","url":"/v1/api/item/create"}
+{"body":{"name":"AAA","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:21:28.006Z","url":"/v1/api/item/create"}
+{"body":{"name":"AAA","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:21:30.865Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:21:30.883Z"}
+{"body":{"name":"CCC","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:21:59.419Z","url":"/v1/api/item/create"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:22:03.416Z","url":"/v1/api/item/findAll"}
+{"body":{"name":"CCC","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:22:10.738Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:22:10.749Z"}
+{"body":{"name":"CCC","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:22:11.586Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:22:11.597Z"}
+{"body":{"name":"CCC","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:22:12.233Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:22:12.244Z"}
+{"body":{"name":"CCCx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:22:15.071Z","url":"/v1/api/item/create"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:22:17.600Z","url":"/v1/api/item/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:27:08.511Z","url":"/v1/api/user/findAll"}
+{"body":{"email":"mtahirwiguna2@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir2"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:27:13.186Z","url":"/v1/api/user/create"}
+{"body":{"email":"mtahirwiguna2@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir2"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:27:15.390Z","url":"/v1/api/user/create"}
+{"body":{"email":"mtahirwiguna2@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir2"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:27:16.127Z","url":"/v1/api/user/create"}
+{"body":{"email":"mtahirwiguna2@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir2"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:27:16.767Z","url":"/v1/api/user/create"}
+{"body":{"email":"mtahirwiguna2@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir2"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:27:17.307Z","url":"/v1/api/user/create"}
+{"body":{"email":"mtahirwiguna23@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir2"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:27:19.315Z","url":"/v1/api/user/create"}
+{"body":{"email":"mtahirwiguna23@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir23"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:27:23.625Z","url":"/v1/api/user/create"}
+{"body":{"email":"mtahirwiguna23@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir23"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:27:33.956Z","url":"/v1/api/user/create"}
+{"body":{"email":"mtahirwiguna23@gmail.com","fullname":"Tahir Wiguna","password":"123","username":"tahir23"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:31:07.817Z","url":"/v1/api/user/create"}
+{"body":{"name":"CCCx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:31:10.264Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:31:10.283Z"}
+{"body":{"name":"CCCx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:32:03.675Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:32:03.810Z"}
+{"body":{"name":"CCCx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:32:16.242Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:32:16.374Z"}
+{"body":{"name":"CCCx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:33:14.238Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:33:14.371Z"}
+{"body":{"name":"CCCx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:33:17.662Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:33:17.798Z"}
+{"body":{"name":"CCCx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:33:30.494Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:33:30.739Z"}
+{"body":{"name":"CCCx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:33:57.685Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:33:57.818Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:34:08.640Z","url":"/v1/api/item/findAll"}
+{"body":{"name":"CCCxxx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:34:13.645Z","url":"/v1/api/item/create"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:50:11.806Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:50:35.934Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:50:51.728Z","url":"/v1/api/invoice/generate"}
+{"body":{"description":"Allow to generate loan","module":"invoice","name":"invoice.generate"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:51:13.679Z","url":"/v1/api/permission/create"}
+{"body":{"permission_id":"36","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:51:37.016Z","url":"/v1/api/role_permission/create"}
+{"body":{"permission_id":"36","roles_id":"1"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:51:38.268Z","url":"/v1/api/role_permission/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-07T15:51:38.281Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:51:44.236Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:51:45.246Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:51:45.716Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:51:53.438Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:51:59.082Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:52:29.378Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:52:45.632Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"notNull Violation: invoice.created_at cannot be null","timestamp":"2023-05-07T15:52:45.807Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:55:07.361Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_client_id_fkey\"","timestamp":"2023-05-07T15:55:07.534Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:55:27.337Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:55:28.552Z","url":"/v1/api/client/findAll"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-07T15:55:31.395Z","url":"/v1/api/client/create"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T15:55:34.145Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_payment_method_id_fkey\"","timestamp":"2023-05-07T15:55:34.197Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T16:00:42.865Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_payment_method_id_fkey\"","timestamp":"2023-05-07T16:00:43.038Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-07T16:04:33.646Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_payment_method_id_fkey\"","timestamp":"2023-05-07T16:04:33.746Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T14:49:53.273Z","url":"/v1/api/invoice/generate"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T14:49:56.050Z","url":"/v1/api/auth/login"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T14:50:04.605Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_payment_method_id_fkey\"","timestamp":"2023-05-08T14:50:04.682Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T14:51:11.982Z","url":"/v1/api/payment_method/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T14:51:42.897Z","url":"/v1/api/payment_method/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:11:10.912Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:11:20.549Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:11:56.861Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:12:03.069Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:12:11.367Z","url":"/v1/api/payment_method/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:12:12.324Z","url":"/v1/api/payment_method/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:12:20.243Z","url":"/v1/api/permission/findAll"}
+{"body":{"allow_create":true,"allow_delete":true,"allow_export":true,"allow_import":true,"allow_read":true,"allow_update":true,"module":"payment_method"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:12:35.163Z","url":"/v1/api/permission/createTemplate"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:12:40.194Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:12:42.807Z","url":"/v1/api/payment_method/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:12:46.625Z","url":"/v1/api/permission/findAll"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:21:49.260Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:22:03.572Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:22:11.471Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:22:32.331Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:22:38.013Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:22:44.931Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:22:58.945Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:23:46.485Z","url":"/v1/api/permission/findAll"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:23:58.249Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:24:48.350Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:25:15.726Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:25:41.349Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:26:02.250Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:26:07.752Z","url":"/v1/api/payment_method/findAll"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:29:46.957Z","url":"/v1/api/role_permission/allowModule"}
+{"level":"error","message":"column permission.module_name does not exist","timestamp":"2023-05-08T15:29:47.096Z"}
+{"body":{"module_name":"payment_method","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:30:15.446Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:30:19.127Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"module_name":"","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:30:58.145Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:31:09.639Z","url":"/v1/api/payment_method/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-08T15:31:41.620Z","url":"/v1/api/payment_method/delete/28"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'error')","timestamp":"2023-05-08T15:31:41.678Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"PUT","timestamp":"2023-05-08T15:31:51.247Z","url":"/v1/api/payment_method/edit/1"}
+{"body":{"name":"CCCxxx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:32:01.453Z","url":"/v1/api/payment_method/create"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-08T15:33:27.462Z","url":"/v1/api/payment_method/delete/28"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'error')","timestamp":"2023-05-08T15:33:27.589Z"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-08T15:33:47.050Z","url":"/v1/api/payment_method/delete/28"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'error')","timestamp":"2023-05-08T15:33:47.177Z"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-08T15:33:54.143Z","url":"/v1/api/payment_method/delete/28"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'error')","timestamp":"2023-05-08T15:33:54.267Z"}
+{"body":{},"level":"info","message":"Request info","method":"DELETE","timestamp":"2023-05-08T15:34:12.943Z","url":"/v1/api/payment_method/delete/28"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:35:04.022Z","url":"/v1/api/payment_method/findAll"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:35:15.904Z","url":"/v1/api/payment_method/create"}
+{"level":"error","message":"notNull Violation: master_payment_method.created_at cannot be null","timestamp":"2023-05-08T15:35:15.965Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:36:16.159Z","url":"/v1/api/payment_method/findAll"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:36:19.155Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:36:27.309Z","url":"/v1/api/payment_method/findAll"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:36:30.297Z","url":"/v1/api/payment_method/create"}
+{"level":"error","message":"notNull Violation: master_payment_method.created_at cannot be null","timestamp":"2023-05-08T15:36:30.308Z"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:37:07.570Z","url":"/v1/api/payment_method/create"}
+{"level":"error","message":"notNull Violation: master_payment_method.created_at cannot be null","timestamp":"2023-05-08T15:37:07.618Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:38:24.541Z","url":"/v1/api/auth/login"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:42:50.975Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:42:54.480Z","url":"/v1/api/payment_method/findAll"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:43:21.027Z","url":"/v1/api/payment_method/create"}
+{"level":"error","message":"notNull Violation: master_payment_method.created_at cannot be null","timestamp":"2023-05-08T15:43:21.084Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:43:44.782Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:43:47.220Z","url":"/v1/api/payment_method/findAll"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:43:49.893Z","url":"/v1/api/payment_method/create"}
+{"level":"error","message":"notNull Violation: master_payment_method.created_at cannot be null","timestamp":"2023-05-08T15:43:49.906Z"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:44:27.262Z","url":"/v1/api/payment_method/create"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:45:09.744Z","url":"/v1/api/payment_method/create"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:45:11.463Z","url":"/v1/api/payment_method/create"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:45:43.757Z","url":"/v1/api/payment_method/create"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:45:59.339Z","url":"/v1/api/payment_method/create"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:46:02.200Z","url":"/v1/api/auth/login"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:46:03.794Z","url":"/v1/api/payment_method/findAll"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:46:07.750Z","url":"/v1/api/payment_method/create"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:46:09.348Z","url":"/v1/api/payment_method/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-08T15:46:09.360Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:47:28.343Z","url":"/v1/api/client/create"}
+{"body":{"name":"CCCxxx","price":"2500000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:47:38.890Z","url":"/v1/api/item/create"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:47:44.527Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:47:47.397Z","url":"/v1/api/invoice/generate"}
+{"body":{"description":"Allow to generate loan","module":"invoice","name":"invoice.generate"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:49:39.319Z","url":"/v1/api/permission/create"}
+{"body":{"module_name":"","roles_id":1},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-08T15:49:45.505Z","url":"/v1/api/role_permission/allowModule"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:49:51.023Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:50:27.192Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:56:54.111Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:58:50.988Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:59:27.465Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item.findbyPk is not a function","timestamp":"2023-05-08T15:59:27.635Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T15:59:42.891Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Invoice.findbyPk is not a function","timestamp":"2023-05-08T15:59:43.066Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:01:10.066Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:01:22.803Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Invoice.findByPK is not a function","timestamp":"2023-05-08T16:01:22.976Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:01:31.689Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Invoice.findByPK is not a function","timestamp":"2023-05-08T16:01:31.706Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:02:20.003Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:02:27.440Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:02:47.658Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:02:54.190Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:02:55.888Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:04:43.471Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:05:05.334Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:05:53.026Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:06:20.542Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:08:45.782Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice_item\" violates foreign key constraint \"invoice_item_invoice_id_fkey\"","timestamp":"2023-05-08T16:08:45.962Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:09:26.530Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:09:30.364Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:09:49.059Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:10:08.518Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:10:25.155Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:10:34.535Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:12:30.841Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:12:45.912Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:13:03.917Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:13:16.754Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:13:34.323Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"invoice_id is not defined","timestamp":"2023-05-08T16:13:34.502Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:13:39.993Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:14:26.394Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:15:20.328Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:16:46.200Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:21:18.244Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:21:30.416Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Cannot access 'result' before initialization","timestamp":"2023-05-08T16:21:30.599Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:21:48.977Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:25:28.899Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:27:06.623Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Unknown date format YYYY-MM-DD HH:mm:ss","timestamp":"2023-05-08T16:27:06.775Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01 22:02:11","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:27:20.239Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Unknown date format YYYY-MM-DD HH:mm:ss","timestamp":"2023-05-08T16:27:20.338Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01 22:02:11","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:27:44.639Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Unknown date format YYYY-MM-DD HH:mm:ss","timestamp":"2023-05-08T16:27:44.796Z"}
+{"body":{"client_id":1,"due_date":"2022-03-01 22:02:11","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:29:41.499Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2022-03-01 22:02:111","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:30:50.757Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-08T16:31:30.849Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:35:21.698Z","url":"/v1/api/invoice/generate"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:35:24.502Z","url":"/v1/api/auth/login"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:35:27.081Z","url":"/v1/api/invoice/generate"}
+{"body":{"name":"Website","price":"1000000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:35:53.475Z","url":"/v1/api/item/create"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:36:13.818Z","url":"/v1/api/invoice/generate"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:37:01.585Z","url":"/v1/api/item/findAll"}
+{"body":{"name":"VPS","price":"250000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:39:20.238Z","url":"/v1/api/item/create"}
+{"body":{"description":"service fee","name":"Services","price":"1000000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:39:42.457Z","url":"/v1/api/item/create"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":3,"qty":2},{"id":4,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:40:01.814Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":3,"qty":2},{"id":4,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:41:27.653Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"column \"item_price\" of relation \"invoice_item\" does not exist","timestamp":"2023-05-09T14:41:27.840Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":3,"qty":2},{"id":4,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:42:43.805Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"column \"item_price\" of relation \"invoice_item\" does not exist","timestamp":"2023-05-09T14:42:43.987Z"}
+{"body":{"password":"rahasia","username":"admin@hr.com"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:44:21.237Z","url":"/v1/api/auth/login"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:44:27.957Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_client_id_fkey\"","timestamp":"2023-05-09T14:44:28.025Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:45:52.428Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_client_id_fkey\"","timestamp":"2023-05-09T14:45:52.710Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:48:58.317Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_client_id_fkey\"","timestamp":"2023-05-09T14:48:58.495Z"}
+{"body":{"address":"Jl. Jalan No. 1","company_name":"PT. PAJERO","email":"ujang@gmail.com","name":"Ujang edited","phone_number":"123457"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:49:03.564Z","url":"/v1/api/client/create"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:49:06.618Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"insert or update on table \"invoice\" violates foreign key constraint \"invoice_payment_method_id_fkey\"","timestamp":"2023-05-09T14:49:06.635Z"}
+{"body":{"name":"CASH"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:50:40.911Z","url":"/v1/api/payment_method/create"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:50:44.696Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Cannot destructure property 'name' of 'data_item' as it is null.","timestamp":"2023-05-09T14:50:44.762Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:52:28.657Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Cannot destructure property 'name' of 'data_item' as it is null.","timestamp":"2023-05-09T14:52:28.842Z"}
+{"level":"error","message":"Cannot destructure property 'name' of 'data_item' as it is null.","timestamp":"2023-05-09T14:52:28.849Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:53:39.816Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T14:53:39.995Z"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T14:53:40.001Z"}
+{"body":{"description":"service fee","name":"Services","price":"1000000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:54:49.089Z","url":"/v1/api/item/create"}
+{"body":{"description":"service fee","name":"Services","price":"1000000"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T14:54:52.460Z","url":"/v1/api/item/create"}
+{"level":"error","message":"Validation error","timestamp":"2023-05-09T14:54:52.476Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:54:55.740Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T14:54:55.806Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:55:33.087Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T14:55:33.268Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-05-09T14:55:33.285Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:55:39.847Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T14:55:40.032Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-05-09T14:55:40.047Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:55:50.354Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T14:55:50.559Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-05-09T14:55:50.576Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:56:30.152Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T14:56:30.457Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-05-09T14:56:30.474Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T14:57:23.101Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T14:57:23.415Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-05-09T14:57:23.434Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:00:08.330Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:00:08.516Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-05-09T15:00:08.534Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:00:29.077Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:00:29.263Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-05-09T15:00:29.281Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:00:56.835Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:00:57.018Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-05-09T15:00:57.035Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:02:23.009Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:02:23.202Z"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:02:23.203Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:02:43.225Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:02:43.402Z"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:02:43.402Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:02:51.852Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:02:52.140Z"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:02:52.141Z"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:03:16.542Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:03:16.726Z"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:03:16.728Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:03:25.055Z","url":"/v1/api/item/findAll"}
+{"body":{"description":"web fee","name":"WEB","price":"555555"},"level":"info","message":"Request info","method":"POST","timestamp":"2023-05-09T15:03:34.056Z","url":"/v1/api/item/create"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":2,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:03:37.221Z","url":"/v1/api/invoice/generate"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:03:37.275Z"}
+{"level":"error","message":"Item not found","timestamp":"2023-05-09T15:03:37.276Z"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:03:42.323Z","url":"/v1/api/client/findAll"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:03:46.804Z","url":"/v1/api/item/findAll"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":3,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:03:52.483Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":3,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:31:34.331Z","url":"/v1/api/invoice/generate"}
+{"body":{"client_id":1,"due_date":"2023-05-08T12:30:00Z","items":[{"id":1,"qty":2},{"id":3,"qty":1}],"payment_method_id":1},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-09T15:34:03.076Z","url":"/v1/api/invoice/generate"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-13T08:37:13.889Z","url":"//email"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-13T08:37:18.893Z","url":"/email"}
+{"body":{},"level":"info","message":"Request info","method":"GET","timestamp":"2023-05-13T08:38:25.353Z","url":"/email"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'findByPk')","timestamp":"2023-05-13T11:19:38.678Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open '../ejs/email.template'","timestamp":"2023-05-13T11:20:20.781Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open '../ejs/email.template.ejs'","timestamp":"2023-05-13T11:20:34.995Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open '../ejs/email'","timestamp":"2023-05-13T11:21:21.976Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open '../ejs/email.template.ejs'","timestamp":"2023-05-13T11:21:52.971Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open '../ejs/email.template.ejs'","timestamp":"2023-05-13T11:22:55.307Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open '../ejs/email.template.ejs'","timestamp":"2023-05-13T11:23:27.834Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open '../ejs/email.template.ejs'","timestamp":"2023-05-13T11:25:20.927Z"}
+{"level":"error","message":"ENOENT: no such file or directory, open '../ejs/email.ejs'","timestamp":"2023-05-13T11:27:21.918Z"}
+{"level":"error","message":"path is not defined","timestamp":"2023-05-13T11:29:37.855Z"}
+{"level":"error","message":"data is not defined","timestamp":"2023-05-13T11:30:02.149Z"}
+{"level":"info","message":"Error sending email to undefined: No recipients defined","timestamp":"2023-05-13T11:30:41.687Z"}
+{"level":"info","message":"Retrying in 5000ms...","timestamp":"2023-05-13T11:30:41.687Z"}
+{"level":"info","message":"Error sending email to undefined: No recipients defined","timestamp":"2023-05-13T11:30:47.947Z"}
+{"level":"info","message":"Retrying in 5000ms...","timestamp":"2023-05-13T11:30:47.947Z"}
+{"level":"info","message":"Error sending email to undefined: No recipients defined","timestamp":"2023-05-13T11:30:54.195Z"}
+{"level":"info","message":"Max retries exceeded, giving up.","timestamp":"2023-05-13T11:30:54.195Z"}
+{"level":"info","message":"Error sending email to undefined: No recipients defined","timestamp":"2023-05-13T11:31:38.932Z"}
+{"level":"info","message":"Retrying in 5000ms...","timestamp":"2023-05-13T11:31:38.932Z"}
+{"level":"info","message":"Error sending email to undefined: No recipients defined","timestamp":"2023-05-13T11:31:44.569Z"}
+{"level":"info","message":"Retrying in 5000ms...","timestamp":"2023-05-13T11:31:44.570Z"}
+{"level":"info","message":"Error sending email to undefined: No recipients defined","timestamp":"2023-05-13T11:31:50.211Z"}
+{"level":"info","message":"Max retries exceeded, giving up.","timestamp":"2023-05-13T11:31:50.212Z"}
+{"level":"error","message":"ejs:89\n    87|         </div>\r\n    88|         <div>\r\n >> 89|           <p><%= invoiceNumber %></p>\r\n    90|           <p><%= invoiceDate %></p>\r\n    91|         </div>\r\n    92|       </div>\r\n\ninvoiceNumber is not defined","timestamp":"2023-05-13T11:56:03.199Z"}

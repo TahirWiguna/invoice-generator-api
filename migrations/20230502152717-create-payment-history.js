@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -32,6 +32,7 @@ module.exports = {
       },
       created_at: {
         allowNull: false,
+        defaultValue: Sequelize.fn("now"),
         type: Sequelize.DATE,
       },
       updated_at: {
@@ -49,9 +50,9 @@ module.exports = {
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
       },
-    })
+    });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("payment_histories")
+    await queryInterface.dropTable("payment_histories");
   },
-}
+};

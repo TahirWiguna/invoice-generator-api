@@ -31,7 +31,7 @@
   "test": {
     "username": "postgres",
     "password": "root",
-    "database": "invoice_reminder",
+    "database": "invoice_generator_test",
     "host": "localhost",
     "port": "5433",
     "dialect": "postgres",
@@ -54,7 +54,7 @@
   "production": {
     "username": "postgres",
     "password": "root",
-    "database": "invoice_reminder",
+    "database": "invoice_generator",
     "host": "localhost",
     "dialect": "postgres",
     "port": 5433,

@@ -1,5 +1,5 @@
-"use strict"
-const { Model } = require("sequelize")
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class invoice_item extends Model {
     /**
@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       invoice_item.belongsTo(models.invoice, {
         foreignKey: "invoice_id",
         as: "invoice",
-      })
+      });
     }
   }
   invoice_item.init(
@@ -20,13 +20,13 @@ module.exports = (sequelize, DataTypes) => {
       item_name: DataTypes.STRING(100),
       item_description: DataTypes.TEXT,
       quantity: DataTypes.SMALLINT,
-      price: DataTypes.DECIMAL(15, 2),
+      item_price: DataTypes.DECIMAL(15, 2),
       total_price: DataTypes.DECIMAL(15, 2),
     },
     {
       sequelize,
       modelName: "invoice_item",
     }
-  )
-  return invoice_item
-}
+  );
+  return invoice_item;
+};

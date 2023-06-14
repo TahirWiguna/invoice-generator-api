@@ -1,5 +1,5 @@
-"use strict"
-const { Model } = require("sequelize")
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class payment_history extends Model {
     /**
@@ -11,19 +11,19 @@ module.exports = (sequelize, DataTypes) => {
       payment_history.belongsTo(models.users, {
         foreignKey: "created_by",
         as: "creator",
-      })
+      });
       payment_history.belongsTo(models.users, {
         foreignKey: "updated_by",
         as: "updater",
-      })
+      });
       payment_history.belongsTo(models.invoice, {
         foreignKey: "invoice_id",
         as: "invoice",
-      })
+      });
       payment_history.belongsTo(models.master_payment_method, {
         foreignKey: "payment_method_id",
         as: "payment",
-      })
+      });
     }
   }
   payment_history.init(
@@ -41,7 +41,11 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.BIGINT,
       },
       amount: DataTypes.DECIMAL(15, 2),
-      created_at: DataTypes.DATE,
+      created_at: {
+        allowNull: false,
+        type: DataTypes.DATE,
+        defaultValue: sequelize.fn("now"),
+      },
       updated_at: DataTypes.DATE,
       updated_by: {
         allowNull: true,
@@ -52,6 +56,6 @@ module.exports = (sequelize, DataTypes) => {
       sequelize,
       modelName: "payment_history",
     }
-  )
-  return payment_history
-}
+  );
+  return payment_history;
+};

@@ -1,24 +1,24 @@
-"use strict"
-const { Model } = require("sequelize")
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
-  class client extends Model {
+  class item extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      client.belongsTo(models.users, {
+      item.belongsTo(models.users, {
         foreignKey: "created_by",
         as: "creator",
-      })
-      client.belongsTo(models.users, {
+      });
+      item.belongsTo(models.users, {
         foreignKey: "updated_by",
         as: "updater",
-      })
+      });
     }
   }
-  client.init(
+  item.init(
     {
       id: {
         allowNull: false,
@@ -26,14 +26,18 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         type: DataTypes.BIGINT,
       },
-      company_name: DataTypes.STRING,
       name: DataTypes.STRING,
-      address: DataTypes.STRING,
-      email: DataTypes.STRING,
-      phone_number: DataTypes.STRING,
+      description: DataTypes.TEXT,
+      price: DataTypes.DECIMAL(15, 2),
+      deleted: {
+        allowNull: false,
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+      },
       created_at: {
         allowNull: false,
         type: DataTypes.DATE,
+        defaultValue: DataTypes.fn("now"),
       },
       created_by: {
         allowNull: false,
@@ -50,24 +54,17 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: "client",
+      modelName: "item",
       indexes: [
         {
           unique: true,
-          fields: ["company_name"],
+          fields: ["name"],
           where: {
-            deleted: false,
-          },
-        },
-        {
-          unique: true,
-          fields: ["email"],
-          where: {
-            deleted: false,
+            deleted: true,
           },
         },
       ],
     }
-  )
-  return client
-}
+  );
+  return item;
+};

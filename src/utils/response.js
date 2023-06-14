@@ -77,7 +77,7 @@ const responseType = {
     status: false,
     message: "Database Validation Error",
   },
-}
+};
 
 /**
  * @param {Response} res
@@ -95,8 +95,8 @@ const response = (res, type, message, data = null) => {
     status: type.status,
     message: message || type.message,
     data: data,
-  })
-}
+  });
+};
 
 /**
  * @param {Response} res
@@ -104,20 +104,29 @@ const response = (res, type, message, data = null) => {
  * @returns {Response}
  */
 const responseCatch = (res, err) => {
-  let resp = responseType.FAILED
+  let resp = responseType.FAILED;
   if (err.name == "SequelizeUniqueConstraintError") {
-    err.message = err.errors[0].message
-    resp = responseType.DATABASE_VALIDATION_ERROR
+    err.message = err.errors.map((e) => e.message);
+    resp = responseType.DATABASE_VALIDATION_ERROR;
+  } else if (err.name == "SequelizeForeignKeyConstraintError") {
+    err.message =
+      process.env.NODE_ENV === "development"
+        ? `Unable to create or update record: ${err.parent.detail}`
+        : `Unable to create or update record.`;
+    resp = responseType.DATABASE_VALIDATION_ERROR;
+  } else if (err.name == "SequelizeDatabaseError") {
+    err.message = `Oops! Something went wrong.`;
+    resp = responseType.FAILED;
   } else if (err.message == "Validation error") {
-    err.message = "DB Validation Error"
-    resp = responseType.DATABASE_VALIDATION_ERROR
+    err.message = "DB Validation Error";
+    resp = responseType.DATABASE_VALIDATION_ERROR;
   }
   return response(
     res,
     resp,
     err.message || "Some error occurred while connecting to databases.",
-    err
-  )
-}
+    process.env.NODE_ENV === "development" ? err : null
+  );
+};
 
-module.exports = { responseType, response, responseCatch }
+module.exports = { responseType, response, responseCatch };

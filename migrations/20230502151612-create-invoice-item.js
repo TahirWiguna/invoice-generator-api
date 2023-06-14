@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -27,20 +27,20 @@ module.exports = {
       quantity: {
         type: Sequelize.SMALLINT,
       },
-      price: {
+      item_price: {
         type: Sequelize.DECIMAL(15, 2),
       },
       total_price: {
         type: Sequelize.DECIMAL(15, 2),
       },
-    })
+    });
 
     await queryInterface.addIndex("invoice_item", {
       unique: true,
       fields: ["invoice_id", "item_name"],
-    })
+    });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("invoice_item")
+    await queryInterface.dropTable("invoice_item");
   },
-}
+};

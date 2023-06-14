@@ -2,27 +2,21 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("client", {
+    await queryInterface.createTable("item", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.BIGINT,
       },
-      company_name: {
-        type: Sequelize.STRING(100),
-      },
       name: {
-        type: Sequelize.STRING(100),
+        type: Sequelize.STRING,
       },
-      address: {
-        type: Sequelize.STRING(255),
+      description: {
+        type: Sequelize.TEXT,
       },
-      email: {
-        type: Sequelize.STRING(50),
-      },
-      phone_number: {
-        type: Sequelize.STRING(20),
+      price: {
+        type: Sequelize.DECIMAL(15, 2),
       },
       deleted: {
         allowNull: false,
@@ -62,22 +56,15 @@ module.exports = {
       },
     });
 
-    await queryInterface.addIndex("client", {
+    await queryInterface.addIndex("item", {
       unique: true,
-      fields: ["email"],
-      where: {
-        deleted: false,
-      },
-    });
-    await queryInterface.addIndex("client", {
-      unique: true,
-      fields: ["company_name"],
+      fields: ["name"],
       where: {
         deleted: false,
       },
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("client");
+    await queryInterface.dropTable("item");
   },
 };

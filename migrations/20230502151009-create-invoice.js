@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -22,9 +22,13 @@ module.exports = {
       },
       total_amount: {
         type: Sequelize.DECIMAL(15, 2),
+        allowNull: false,
+        defaultValue: 0,
       },
       amount_paid: {
         type: Sequelize.DECIMAL(15, 2),
+        allowNull: false,
+        defaultValue: 0,
       },
       payment_method_id: {
         type: Sequelize.BIGINT,
@@ -48,6 +52,7 @@ module.exports = {
       created_at: {
         allowNull: false,
         type: Sequelize.DATE,
+        defaultValue: Sequelize.fn("now"),
       },
       created_by: {
         allowNull: false,
@@ -75,9 +80,9 @@ module.exports = {
         onDelete: "CASCADE",
         onUpdate: "CASCADE",
       },
-    })
+    });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("invoice")
+    await queryInterface.dropTable("invoice");
   },
-}
+};
