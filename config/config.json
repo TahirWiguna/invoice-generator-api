@@ -1,78 +1,78 @@
 {
-  "development": {
-    "username": "postgres",
-    "password": "root",
-    "database": "invoice_generator",
-    "host": "localhost",
-    "dialect": "postgres",
-    "port": "5433",
-    "operatorsAliases": 0,
-    "pool": {
-      "max": 5,
-      "min": 0,
-      "acquire": 30000,
-      "idle": 10000
+    "development": {
+        "username": "postgres",
+        "password": "root",
+        "database": "invoice_generator",
+        "host": "localhost",
+        "dialect": "postgres",
+        "port": "5432",
+        "operatorsAliases": 0,
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        },
+        "init": {
+            "freezeTableName": true,
+            "timestamps": false
+        },
+        "define": {
+            "freezeTableName": true,
+            "timestamps": false
+        },
+        "logging": false,
+        "dialectOptions": {
+            "timezone": "Asia/Jakarta"
+        },
+        "timezone": "+07:00",
+        "useUTC": false
     },
-    "init": {
-      "freezeTableName": true,
-      "timestamps": false
+    "test": {
+        "username": "postgres",
+        "password": "root",
+        "database": "invoice_generator_test",
+        "host": "localhost",
+        "port": "5432",
+        "dialect": "postgres",
+        "operatorsAliases": 0,
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        },
+        "init": {
+            "freezeTableName": true,
+            "timestamps": false
+        },
+        "define": {
+            "freezeTableName": true,
+            "timestamps": false
+        }
     },
-    "define": {
-      "freezeTableName": true,
-      "timestamps": false
-    },
-    "logging": false,
-    "dialectOptions": {
-      "timezone": "Asia/Jakarta"
-    },
-    "timezone": "+07:00",
-    "useUTC": false
-  },
-  "test": {
-    "username": "postgres",
-    "password": "root",
-    "database": "invoice_generator_test",
-    "host": "localhost",
-    "port": "5433",
-    "dialect": "postgres",
-    "operatorsAliases": 0,
-    "pool": {
-      "max": 5,
-      "min": 0,
-      "acquire": 30000,
-      "idle": 10000
-    },
-    "init": {
-      "freezeTableName": true,
-      "timestamps": false
-    },
-    "define": {
-      "freezeTableName": true,
-      "timestamps": false
+    "production": {
+        "username": "postgres",
+        "password": "root",
+        "database": "invoice_generator",
+        "host": "localhost",
+        "dialect": "postgres",
+        "port": 5432,
+        "operatorsAliases": 0,
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        },
+        "init": {
+            "freezeTableName": true,
+            "timestamps": false
+        },
+        "define": {
+            "freezeTableName": true,
+            "timestamps": false
+        },
+        "logging": false
     }
-  },
-  "production": {
-    "username": "postgres",
-    "password": "root",
-    "database": "invoice_generator",
-    "host": "localhost",
-    "dialect": "postgres",
-    "port": 5433,
-    "operatorsAliases": 0,
-    "pool": {
-      "max": 5,
-      "min": 0,
-      "acquire": 30000,
-      "idle": 10000
-    },
-    "init": {
-      "freezeTableName": true,
-      "timestamps": false
-    },
-    "define": {
-      "freezeTableName": true,
-      "timestamps": false
-    },
-    "logging": false
-  }
 }

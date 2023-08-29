@@ -1,157 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Invoice</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        box-sizing: border-box;
-        font-family: "Roboto";
-      }
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        color: #333;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      table .table-footer {
-        text-transform: uppercase;
-      }
-      th,
-      td {
-        padding: 15px 10px;
-        border-bottom: 1px solid #ddd;
-        text-align: left;
-      }
-      th {
-        border-top: 2px solid #ccc;
-        border-bottom: 2px solid #ccc;
-        text-transform: uppercase;
-      }
-      .title {
-        background-color: #f2f2f2;
-        padding: 30px;
-        text-align: center;
-      }
-      .title h1 {
-        margin: 0;
-      }
-      .footer {
-        background-color: #f2f2f2;
-        padding: 20px;
-        text-align: center;
-        margin-top: 10px;
-      }
+    <head>
+        <meta charset="utf-8" />
+        <title>Invoice</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: "Roboto";
+            }
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                color: #333;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            table .table-footer {
+                text-transform: uppercase;
+            }
+            th,
+            td {
+                padding: 15px 10px;
+                border-bottom: 1px solid #ddd;
+                text-align: left;
+            }
+            th {
+                border-top: 2px solid #ccc;
+                border-bottom: 2px solid #ccc;
+                text-transform: uppercase;
+            }
+            .title {
+                background-color: #f2f2f2;
+                padding: 30px;
+                text-align: center;
+            }
+            .title h1 {
+                margin: 0;
+            }
+            .footer {
+                background-color: #f2f2f2;
+                padding: 20px;
+                text-align: center;
+                margin-top: 10px;
+            }
 
-      .invert {
-        color: white;
-        background-color: #333;
-      }
+            .invert {
+                color: white;
+                background-color: #333;
+            }
 
-      .header {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px 0;
-      }
-      .top {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 2px solid #ccc;
-      }
-      .detail,
-      .logo {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-      }
-      .header .detail p {
-        margin: 2px 0;
-      }
-      .description {
-        font-size: 12px;
-        color: #999;
-      }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+            }
+            .top {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px solid #ccc;
+            }
+            .detail,
+            .logo {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .header .detail p {
+                margin: 2px 0;
+            }
+            .description {
+                font-size: 12px;
+                color: #999;
+            }
 
-      .text-center {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div style="max-width: 600px; margin: 0 auto">
-      <div class="top">
-        <p>Invoice: #<%= data.id %></p>
-        <p>Invoice Date: <%= data.created_at %></p>
-      </div>
-      <div class="header">
-        <div class="logo" style="width: 74%">
-          <img
-            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-            alt="logo"
-            style="max-width: 200px"
-          />
+            .text-center {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="max-width: 600px; margin: 0 auto">
+            <div class="top">
+                <p>Invoice: #<%= data.id %></p>
+                <p>&nbsp; Invoice Date: <%= data.created_at %></p>
+            </div>
+            <div class="header">
+                <div class="logo" style="width: 50%">
+                    <img
+                        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                        alt="logo"
+                        style="max-width: 200px"
+                    />
+                </div>
+                <div class="detail" style="width: 50%">
+                    <p><b>Invoice To:</b></p>
+                    <p>
+                        <%= data.client.name %> <br />
+                        <span style="color: #ccc"><%= data.client.address %></span>
+                    </p>
+                </div>
+            </div>
+            <table>
+                <tr class="">
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+                <% for (let i = 0; i < data.items.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= data.items[i].item_name %>
+                        <br />
+                        <span class="description"> <%= data.items[i].item_description %> </span>
+                    </td>
+                    <td class="">x<%= data.items[i].quantity %></td>
+                    <td><%= format(data.items[i].item_price) %></td>
+                    <td><%= format(data.items[i].total_price) %></td>
+                </tr>
+                <% } %>
+                <tr class="table-footer">
+                    <td colspan="2" rowspan="3" style="border: none">
+                        <p><b>Questions?</b></p>
+                        <p>Email us at EMAIL@GMAIL.COM<br />or call us at +62123456</p>
+                    </td>
+                    <td style="font-weight: 600">Subtotal</td>
+                    <td><%= data.total_amount_formatted %></td>
+                </tr>
+                <tr class="table-footer">
+                    <td style="font-weight: 600">Tax</td>
+                    <td>-</td>
+                </tr>
+                <tr class="table-footer invert">
+                    <td style="font-weight: 600; border: none">Total</td>
+                    <td style="border: none"><%= data.total_amount_formatted %></td>
+                </tr>
+            </table>
+            <div class="footer">
+                <p>
+                    Don't worry about signing or sealing your invoice, it's already valid since it was created
+                    electronically. You can go ahead and pay it as usual. Let us know if you have any questions or
+                    concerns, we're happy to help!
+                </p>
+            </div>
         </div>
-        <div class="detail" style="width: 26%">
-          <p><b>Invoice To:</b></p>
-          <p><%= data.client.name %></p>
-          <p style="color: #ccc"><%= data.client.address %></p>
-        </div>
-      </div>
-      <table>
-        <tr class="">
-          <th>Item</th>
-          <th>Quantity</th>
-          <th>Price</th>
-          <th>Total</th>
-        </tr>
-        <% for (let i = 0; i < data.items.length; i++) { %>
-        <tr>
-          <td>
-            <%= data.items[i].item_name %>
-            <br />
-            <span class="description">
-              <%= data.items[i].item_description %>
-            </span>
-          </td>
-          <td class="text-center">x<%= data.items[i].quantity %></td>
-          <td><%= data.items[i].item_price %></td>
-          <td><%= data.items[i].total_price %></td>
-        </tr>
-        <% } %>
-        <tr class="table-footer">
-          <td colspan="2" rowspan="3" style="border: none">
-            <p><b>Questions?</b></p>
-            <p>Email us at EMAIL@GMAIL.COM<br />or call us at +62123456</p>
-          </td>
-          <td style="font-weight: 600">Subtotal</td>
-          <td><%= data.total_amount_formatted %></td>
-        </tr>
-        <tr class="table-footer">
-          <td style="font-weight: 600">Tax</td>
-          <td>-</td>
-        </tr>
-        <tr class="table-footer invert">
-          <td style="font-weight: 600; border: none">Total</td>
-          <td style="border: none"><%= data.total_amount_formatted %></td>
-        </tr>
-      </table>
-      <div class="footer">
-        <p>
-          Don't worry about signing or sealing your invoice, it's already valid
-          since it was created electronically. You can go ahead and pay it as
-          usual. Let us know if you have any questions or concerns, we're happy
-          to help!
-        </p>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

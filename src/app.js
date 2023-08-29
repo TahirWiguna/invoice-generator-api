@@ -1,5 +1,6 @@
 const requestIp = require("request-ip");
 const helmet = require("helmet");
+const cors = require("cors");
 
 const { logger, logError, logRequest } = require("./utils/logger");
 const sendEmail = require("./utils/email");
@@ -25,6 +26,7 @@ const API_URL = "/v1/api";
 
 // MIDDLEWARE
 app.use(helmet());
+app.use(cors());
 app.use(express.json());
 app.use(errorHandler);
 app.use(requestIp.mw());
@@ -45,12 +47,12 @@ app.use(API_URL, invoiceRouter);
 app.use(API_URL, paymentMethodRouter);
 
 app.get("/email", async (req, res) => {
-  const send = await sendEmail(
-    "mtahirwiguna@gmail.com",
-    "Invoice Generator",
-    "<div>Ini adalah invoice gen</div><div>haha</div>"
-  );
-  res.send(send);
+    const send = await sendEmail(
+        "mtahirwiguna@gmail.com",
+        "Invoice Generator",
+        "<div>Ini adalah invoice gen</div><div>haha</div>"
+    );
+    res.send(send);
 });
 
 // SYNC DB
@@ -66,21 +68,21 @@ app.get("/email", async (req, res) => {
 
 // LISTEN
 app.listen(PORT, () => {
-  console.log(`App is running on PORT ${PORT} | ENV ${process.env.NODE_ENV}`);
+    console.log(`App is running on PORT ${PORT} | ENV ${process.env.NODE_ENV}`);
 });
 
 module.exports = app;
 
 // Error handler
 function errorHandler(err, req, res, next) {
-  if (err.code === "23505") {
-    // Handle unique constraint violation error
-    res.status(409).json({ message: "Data already exist" });
-  } else {
-    res.status(err.status).json({
-      message: "Oops! Something went wrong.",
-      error: err.message,
-      err,
-    });
-  }
+    if (err.code === "23505") {
+        // Handle unique constraint violation error
+        res.status(409).json({ message: "Data already exist" });
+    } else {
+        res.status(err.status).json({
+            message: "Oops! Something went wrong.",
+            error: err.message,
+            err,
+        });
+    }
 }
